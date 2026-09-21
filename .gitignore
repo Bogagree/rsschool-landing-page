@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/
+
+# Dependencies / build (если позже появится Vite и т.п.)
+node_modules/
+dist/
+build/
+.cache/
+*.local
+
+# Env / secrets
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
