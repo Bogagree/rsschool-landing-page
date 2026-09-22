@@ -1,0 +1,18 @@
+/* Design tokens, typography, base element styles — feat/tokens-base */
+:root {
+  /* color, spacing, font tokens — after P-001 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}

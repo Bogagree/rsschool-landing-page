@@ -1,0 +1,7 @@
+/* Light / dark via data-theme — feat/theme-localstorage */
+:root,
+[data-theme='light'] {
+}
+
+[data-theme='dark'] {
+}

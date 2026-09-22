@@ -8,19 +8,26 @@
 - [Часть 1. Вёрстка](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-1.md)
 - [Часть 2. Функциональность](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-2.md)
 
-## Ветки (по требованиям задания)
+## SDD
+
+Проект ведётся по Spec-Driven Development. Старт: [docs/README.md](docs/README.md).
+
+| Сейчас | Путь |
+| --- | --- |
+| Следующий шаг | [docs/part-1-plan.md](docs/part-1-plan.md) → `## Next` |
+| Решения | [docs/decisions.md](docs/decisions.md) |
+
+## Ветки
 
 | Ветка | Назначение |
 | --- | --- |
-| `main` | Только служебные файлы (`README`, `.gitignore`, `.github`, `docs`) |
+| `main` | Служебные файлы |
 | `landing-page` | Часть 1 → PR в `main` (не мержить) |
 | `landing-page-part-2` | Часть 2 → PR в `landing-page` (не мержить) |
 
 ## Сдача
 
-Пошаговый чеклист: [docs/submit-checklist.md](docs/submit-checklist.md).
-
-В **Cross-Check: Submit** отправляется ссылка на Pull Request, а не на репозиторий.
+[docs/submit-checklist.md](docs/submit-checklist.md) — в Cross-Check: Submit нужна ссылка на **Pull Request**.
 
 ## Автор
 
