@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/header-footer
+feat/home-hero
 ```
 
-Header и footer. Спеки: [header.md](./specs/header.md), [footer.md](./specs/footer.md).
+Hero-секция. Спека: [hero.md](./specs/hero.md).
 
 ---
 
@@ -29,7 +29,7 @@ main
     ├── [done] feat/folder-scaffold        # index/menu + css/js/assets/data каркас
     ├── [done] feat/choose-variant         # P-001 Coffee House + overview + assets plan
     ├── [done] feat/tokens-base            # CSS variables, base, container
-    ├── [    ] feat/header-footer          # specs/header.md, footer.md
+    ├── [done] feat/header-footer          # specs/header.md, footer.md
     ├── [    ] feat/home-hero              # specs/hero.md
     ├── [    ] feat/home-slider-markup     # specs/slider.md (без JS)
     ├── [    ] feat/home-extra-sections    # specs/home-sections.md

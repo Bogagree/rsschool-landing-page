@@ -1,8 +1,138 @@
-/* header, footer, hero, slider, cards, modal — заполняется по feat/* */
+/* header, footer — feat/header-footer. hero, slider, cards, modal — позже. */
 .header {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+}
+
+.header__inner,
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+  padding-block: var(--space-md);
+}
+
+.header__logo {
+  flex-shrink: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header__logo:hover {
+  color: var(--color-link);
+}
+
+.header__nav {
+  flex: 1 1 auto;
+}
+
+.header__list,
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.header__link,
+.footer__link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header__link:hover,
+.footer__link:hover {
+  color: var(--color-link);
+}
+
+.header__link:focus-visible,
+.header__logo:focus-visible,
+.header__theme:focus-visible,
+.header__burger:focus-visible,
+.footer__link:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.header__actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-left: auto;
+}
+
+.header__theme {
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--color-text);
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.header__theme:hover {
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.header__burger:hover {
+  opacity: 0.7;
+}
+
+.header__burger-bar {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background-color: var(--color-text);
 }
 
 .footer {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-top: 1px solid var(--color-text);
+}
+
+.footer__copy {
+  margin: 0;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: inline-flex;
+  }
 }
 
 .hero {
