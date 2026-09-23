@@ -96,6 +96,20 @@ data/                   → products.json / products.js (Часть 2)
 
 ---
 
+## D-007: Agent factory и артефакт QA
+
+- Status: Accepted
+- Date: 2026-09-23
+- Почему: один шаг плана должен идти одним пайплайном, а вердикт QA — жить в репо, не в чате
+
+Скиллы в git: `.cursor/skills/landing-page-orchestrator`, `landing-page-developer`, `landing-page-reviewer`, `landing-page-qa`. Правило: `.cursor/rules/agent-factory.mdc`.
+
+Пайплайн: Developer → Reviewer → QA → PR в part-ветку (`landing-page`, позже `landing-page-part-2`). Не мержить без пользователя. `feat/*` PR — Summary + Test plan, без чеклиста курса и без `Made with Cursor`.
+
+QA-отчёт: `docs/qa/<feat-slug>.md` (`feat/header-footer` → `header-footer.md`): статус и заметки, без PNG в git. Проверки — чеклист шага (семантика, нет горизонтального скролла, 1440/768/380, контраст темы если тема есть, hover не сдвигает соседей). Это не pixel-perfect 375/768/1920. Пока P-001 не `Accepted` и макета нет, QA вёрстки — BLOCKED. Docs-only шаг: QA SKIPPED.
+
+---
+
 ## P-001: Вариант выполнения — Coffee House
 
 - Status: Accepted

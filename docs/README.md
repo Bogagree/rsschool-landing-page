@@ -12,7 +12,20 @@ Landing Page ведётся по **SDD** (как в [minigames](https://github.c
 | [implementation-plan.md](./implementation-plan.md) | Общий порядок работ |
 | [part-1-plan.md](./part-1-plan.md) | Чеклист шагов Части 1 |
 | [part-2-plan.md](./part-2-plan.md) | Чеклист шагов Части 2 |
+| [qa/](./qa/) | Отчёты QA шага (`docs/qa/<feat-slug>.md`) |
 | [submit-checklist.md](./submit-checklist.md) | Сдача cross-check |
+| Agent factory (Cursor) | `.cursor/skills/landing-page-*/` + rule `agent-factory` |
+
+## Agent factory
+
+Один шаг плана → пайплайн (не мержить без тебя):
+
+1. **Developer** — `.cursor/skills/landing-page-developer/SKILL.md`
+2. **Reviewer** — `.cursor/skills/landing-page-reviewer/SKILL.md`
+3. **QA** (чеклист шага: семантика, без горизонтального скролла, 1440/768/380, контраст темы, hover) — `.cursor/skills/landing-page-qa/SKILL.md` → артефакт `docs/qa/<feat-slug>.md`
+4. **PR** в part-ветку — только если все стадии зелёные (оркестратор). Чеклист курса — только на PR `landing-page` → `main`
+
+Пока P-001 не выбран, QA вёрстки — BLOCKED. Запуск: «factory / оркестратор / полный пайплайн» + шаг `feat/…` → skill `landing-page-orchestrator`. Решение: [D-007](./decisions.md).
 
 ## Как работать
 
