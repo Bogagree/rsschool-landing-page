@@ -42,5 +42,5 @@ Landing Page ведётся по **SDD** (как в [minigames](https://github.c
 - [Общее описание](https://github.com/rolling-scopes-school/tasks/tree/master/fullstack-engineering/tasks/landing-page)
 - [Часть 1. Вёрстка](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-1.md)
 - [Часть 2. Функциональность](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-2.md)
-- [Макет Coffee House](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffee-House-2026Q3?node-id=0-1) — если выбран вариант 1
+- [Макет Coffee House](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffee-House-2026Q3?node-id=0-1) — выбранный вариант ([P-001](./decisions.md))
 - [Git convention](https://rs.school/docs/git-convention) · [PR requirements](https://rs.school/docs/short-track/pull-request-requirements)

@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/choose-variant
+feat/tokens-base
 ```
 
-Закрыть P-001 (Coffee House vs авторский), обновить `specs/overview.md` + `decisions.md`, при Coffee House — выгрузить ассеты из Figma.
+CSS variables, base, container. Вариант уже принят: Coffee House ([P-001](./decisions.md)).
 
 ---
 
@@ -27,7 +27,7 @@ main
 └── landing-page
     ├── [done] feat/sdd-skeleton           # docs SDD по образцу minigames
     ├── [done] feat/folder-scaffold        # index/menu + css/js/assets/data каркас
-    ├── [    ] feat/choose-variant         # P-001 + overview + assets plan
+    ├── [done] feat/choose-variant         # P-001 Coffee House + overview + assets plan
     ├── [    ] feat/tokens-base            # CSS variables, base, container
     ├── [    ] feat/header-footer          # specs/header.md, footer.md
     ├── [    ] feat/home-hero              # specs/hero.md
