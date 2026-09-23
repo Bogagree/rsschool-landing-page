@@ -4,10 +4,10 @@
 - Branch: `feat/home-hero`
 - Base: `landing-page`
 - Variant: Coffee House (P-001 Accepted)
-- Page: `http://127.0.0.1:8766/index.html`
+- Pages: `http://127.0.0.1:8766/index.html`, `http://127.0.0.1:8766/menu.html`
 - Spec: `docs/specs/hero.md`
 
-The previous PASS on this file scored the hero **without** `assets/images/img-hero.jpg`. This run rewrote the report after the latte photo was added. No binary screenshots were committed.
+The previous PASS scored the hero photo before header SVGs. This run rechecked after `logo.svg`, `light.svg`, and `dark.svg` were placed in `assets/icons/` and used in the header on both pages. No binary screenshots were committed.
 
 ## What was checked
 
@@ -21,6 +21,8 @@ Home page only (this step). Image `assets/images/img-hero.jpg` loaded (`naturalW
 
 Hover on `.hero__cta`: opacity `0.85`. CTA box stayed `56,555 128×58`. Title box stayed `56,209 528×227`.
 
+Header this run: `logo.svg` natural width 100, `alt="Resource Coffee House"`. `light.svg` displayed, `dark.svg` `display: none` without `data-theme`. On `menu.html` at 380: scroll 380/380, nav hidden, burger flex.
+
 ## QA result
 
 - Status: PASS
@@ -31,4 +33,4 @@ Hover on `.hero__cta`: opacity `0.85`. CTA box stayed `56,555 128×58`. Title bo
 - Theme contrast: n/a — theme control unchanged; banner text is `#fff` on the photo
 - Hover stable: PASS
 - Blocking defects: none
-- Non-blocking: other Figma exports remain untracked in `src/assets/` for later steps
+- Non-blocking: slider, about, and catalog images are in `assets/images/` and not in the markup yet. No burger SVG, so the button stays CSS bars.

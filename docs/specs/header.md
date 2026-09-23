@@ -26,15 +26,15 @@
 
 ## Реализация (feat/header-footer)
 
-`get_metadata` и `get_screenshot` для fileKey `yuc5s9NCc4jENkk5LdFfvX`, node `0:1` снова вернули отсутствие edit access. В `assets/icons/` файлов нет. Логотип, иконка бургера и иконка темы не рисуются и не подменяются картинками.
+Логотип и иконки темы — экспорт пользователя в `assets/icons/`. SVG бургера в выгрузке нет: кнопка остаётся из CSS-полос.
 
 Одинаковая разметка на `index.html` и `menu.html` (на каталоге у ссылки Menu — `aria-current="page"`).
 
 | Элемент | Контракт |
 | --- | --- |
-| Название | Текст `Coffee House`, ссылка на `index.html`. Не файл из макета. |
+| Название | `img.header__logo-img` → `assets/icons/logo.svg`, `alt="Resource Coffee House"`, ссылка на `index.html`. |
 | Nav | `nav` → `ul` → `li` → `a`. Якоря текущих секций каркаса главной и ссылка на каталог. Подписи = роли секций каркаса, не имена слоёв Figma. |
-| Тема | `button.header__theme`. В этом шаге не меняет `data-theme`. |
+| Тема | `button.header__theme`, `aria-label="Theme"`. Внутри `light.svg` и `dark.svg`. В светлой теме видна `light`, при `data-theme="dark"` — `dark`. Кнопка по-прежнему не переключает тему. |
 | Бургер | `button.header__burger`, `aria-expanded="false"`, `aria-disabled="true"`, без панели. Виден при `max-width: 768px`; `.header__nav` при этой ширине скрыта. |
 
 | Подпись | href |
@@ -45,4 +45,4 @@
 | Extra | `index.html#extra` |
 | Menu | `menu.html` |
 
-Когда `feat/home-*` переименует id секций под макет, в том же шаге обновить эту таблицу и href. Иконки из `assets/icons/` подставить вместо текстового названия и CSS-полос бургера, когда файлы появятся.
+Когда `feat/home-*` переименует id секций под макет, в том же шаге обновить эту таблицу и href. SVG бургера подставить вместо CSS-полос, когда файл появится в `assets/icons/`.
