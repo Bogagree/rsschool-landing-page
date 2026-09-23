@@ -1,7 +1,15 @@
-/* Light / dark via data-theme — feat/theme-localstorage */
+/* Semantic colors. Not the Coffee House palette — docs/specs/architecture.md */
 :root,
 [data-theme='light'] {
+  color-scheme: light;
+  --color-bg: Canvas;
+  --color-text: CanvasText;
+  --color-link: LinkText;
 }
 
 [data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: Canvas;
+  --color-text: CanvasText;
+  --color-link: LinkText;
 }

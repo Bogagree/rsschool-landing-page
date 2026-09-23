@@ -1,4 +1,11 @@
-/* Container, sections, page grid — feat/tokens-base / responsive */
+/* Centered content column. Full-bleed backgrounds stay off .container. */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline);
+}
+
 .main {
 }
 

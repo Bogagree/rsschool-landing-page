@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/tokens-base
+feat/header-footer
 ```
 
-CSS variables, base, container. Вариант уже принят: Coffee House ([P-001](./decisions.md)).
+Header и footer. Спеки: [header.md](./specs/header.md), [footer.md](./specs/footer.md).
 
 ---
 
@@ -28,7 +28,7 @@ main
     ├── [done] feat/sdd-skeleton           # docs SDD по образцу minigames
     ├── [done] feat/folder-scaffold        # index/menu + css/js/assets/data каркас
     ├── [done] feat/choose-variant         # P-001 Coffee House + overview + assets plan
-    ├── [    ] feat/tokens-base            # CSS variables, base, container
+    ├── [done] feat/tokens-base            # CSS variables, base, container
     ├── [    ] feat/header-footer          # specs/header.md, footer.md
     ├── [    ] feat/home-hero              # specs/hero.md
     ├── [    ] feat/home-slider-markup     # specs/slider.md (без JS)
