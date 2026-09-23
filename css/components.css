@@ -136,6 +136,67 @@
 }
 
 .hero {
+  padding-block: var(--space-lg);
+}
+
+.hero__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  min-height: 20rem;
+  padding: var(--space-xl);
+  border-radius: var(--space-xl);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.hero__title {
+  max-width: 33rem;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.hero__accent {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero__text {
+  max-width: 33rem;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  padding: var(--space-md) var(--space-xl);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.hero__cta:hover {
+  opacity: 0.85;
+}
+
+.hero__cta:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .hero__banner {
+    justify-content: center;
+    min-height: 40rem;
+    padding: 2.5rem;
+  }
 }
 
 .slider {
