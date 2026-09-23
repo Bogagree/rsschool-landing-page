@@ -25,6 +25,7 @@ main
 ## PR `feat/*` → `landing-page` | `landing-page-part-2`
 
 Кратко: Summary + Test plan + ссылки на затронутые `docs/specs/…` и `docs/decisions.md`.  
+Ссылка на QA, если был UI-шаг: `docs/qa/<feat-slug>.md` (D-007).  
 Чеклист курса (Task / Screenshot / Deployment / Score) **не заполнять**.  
 Футер `Made with Cursor` **не добавлять**.
 
