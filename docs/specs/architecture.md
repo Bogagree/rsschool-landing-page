@@ -54,7 +54,7 @@ docs/               → SDD (не в runtime)
 
 Переключатель и `localStorage` — `feat/theme-localstorage` ([theme.md](./theme.md)), не этот шаг.
 
-`.container`: `width: 100%`, `max-width: var(--container-max-width)` (1440px — десктоп из критериев курса), `margin-inline: auto`. Фон секции не вешать на `.container`: выше 1440px колонка по центру, фон может быть на всю ширину. Пока нет полноширинных секций, класс стоит на `<main>`.
+`.container`: `width: 100%`, `max-width: var(--container-max-width)` (1440px — десктоп из критериев курса), `margin-inline: auto`. Фон секции не вешать на `.container`: выше 1440px колонка по центру, фон может быть на всю ширину. На главной `.container` стоит на `.hero__inner` и на обёртке пустых соседних секций, не на `<main>`.
 
 `get_variable_defs` для fileKey `yuc5s9NCc4jENkk5LdFfvX`, node `0:1` вернул отсутствие edit access. Повтор не делался, бинарники не скачивались. Цвета в `themes.css` — системные `Canvas` / `CanvasText` / `LinkText` и `color-scheme`, не палитра макета. Числа отступов и кегля — структурный каркас, не замеры Figma. Когда переменные макета появятся, подставить их в эти же имена; каркас не выдавать за бренд.
 
