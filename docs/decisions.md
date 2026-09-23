@@ -96,10 +96,20 @@ data/                   → products.json / products.js (Часть 2)
 
 ---
 
-## Pending
+## P-001: Вариант выполнения — Coffee House
 
-### P-001: Вариант выполнения
+- Status: Accepted
+- Date: 2026-09-23
+- Почему: пользователь назвал готовый макет курса, а не авторский проект
 
-- Coffee House (Figma) **или** авторский проект.
-- После выбора: `Accepted` decision + обновить [specs/overview.md](./specs/overview.md) (тема, URL каталога, макет).
-- Указать вариант в описании PR Части 1.
+Вариант: **Coffee House**. Авторская тема не выбиралась.
+
+| Поле | Значение |
+| --- | --- |
+| Тема / бренд | Coffee House |
+| Макет | [Coffee House 2026Q3](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffee-House-2026Q3?node-id=0-1) |
+| fileKey | `yuc5s9NCc4jENkk5LdFfvX` |
+| Известный node | `0:1` (страница из URL курса, `node-id=0-1`) |
+| URL каталога | `menu.html` |
+
+Бинарники из Figma в этом шаге не скачаны. `get_metadata` вернул отсутствие edit access; повторный импорт не делался. Заглушки не добавлять. Список для ручного экспорта — в [specs/overview.md](./specs/overview.md). В описании PR Части 1 (`landing-page` → `main`) указать вариант Coffee House.
