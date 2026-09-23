@@ -13,6 +13,7 @@
 - Атрибут/класс на `<html>` (например `data-theme="dark"`).
 - Токены в `css/themes.css` / `base.css`.
 - Логика: `js/theme.js`, подключение на обеих страницах.
+- Кнопка уже в header: `.header__theme` на обеих страницах (`feat/header-footer`). Этот шаг её не переключает.
 
 ## Out of scope
 
