@@ -8,7 +8,13 @@ Desktop.ini
 .vscode/
 *.swp
 *.swo
-.cursor/
+
+# Cursor local cache (project rules/skills — в git, как в minigames)
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+!.cursor/skills/
+!.cursor/skills/**
 
 # Dependencies / build (если позже появится Vite и т.п.)
 node_modules/

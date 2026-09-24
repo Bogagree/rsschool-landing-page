@@ -1,0 +1,36 @@
+---
+description: Landing Page — Spec-Driven Development
+alwaysApply: true
+---
+
+# SDD в rsschool-landing-page
+
+Репозиторий ведётся по Spec-Driven Development (как minigames). Глобальное правило SDD тоже действует.
+
+## Где что лежит
+
+| Артефакт | Путь |
+| --- | --- |
+| Индекс SDD | `docs/README.md` |
+| Закрытые решения | `docs/decisions.md` |
+| Спеки | `docs/specs/` |
+| Конвенции | `docs/conventions/` |
+| Общий план | `docs/implementation-plan.md` |
+| План части | `docs/part-1-plan.md`, `docs/part-2-plan.md` (`## Next` + `[done]`) |
+| QA отчёты | `docs/qa/<feat-slug>.md` |
+| Agent factory | `.cursor/skills/landing-page-orchestrator` (+ developer / reviewer / qa) |
+| Сдача | `docs/submit-checklist.md` |
+
+## Перед кодом
+
+1. Прочитать спеку области (`docs/specs/…`) и `docs/decisions.md`.
+2. Одна задача = одна `feat/*` = один короткий контекст чата.
+3. Меняется поведение — сначала спека или decision, потом код.
+4. Новое решение — сразу `Accepted` в `docs/decisions.md`.
+5. Смотреть `## Next` в плане текущей части — не прыгать через шаги.
+
+Полный шаг с ревью и QA → skill оркестратора (developer → reviewer → QA → PR). Не мержить PR без пользователя.
+
+Не дублировать длинные ТЗ курса в чат: ссылаться на `docs/specs/` и ссылки из [docs/README.md](docs/README.md).
+
+Не добавлять «Made with Cursor» в PR/коммиты/README, пока пользователь явно не попросил.

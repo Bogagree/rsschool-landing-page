@@ -1,0 +1,244 @@
+/* header, footer, hero. slider, cards, modal — позже. */
+.header {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+}
+
+.header__inner,
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+  padding-block: var(--space-md);
+}
+
+.header__logo {
+  flex-shrink: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.header__logo-img {
+  height: 3rem;
+  width: auto;
+}
+
+.header__logo:hover {
+  opacity: 0.85;
+}
+
+.header__nav {
+  flex: 1 1 auto;
+}
+
+.header__list,
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.header__link,
+.footer__link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header__link:hover,
+.footer__link:hover {
+  color: var(--color-link);
+}
+
+.header__link:focus-visible,
+.header__logo:focus-visible,
+.header__theme:focus-visible,
+.header__burger:focus-visible,
+.footer__link:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.header__actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-left: auto;
+}
+
+.header__theme {
+  display: inline-flex;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.header__theme:hover {
+  opacity: 0.7;
+}
+
+.header__theme-icon {
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.header__theme-icon--dark {
+  display: none;
+}
+
+[data-theme='dark'] .header__theme-icon--light {
+  display: none;
+}
+
+[data-theme='dark'] .header__theme-icon--dark {
+  display: block;
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.header__burger:hover {
+  opacity: 0.7;
+}
+
+.header__burger-bar {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+.footer {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-top: 1px solid var(--color-text);
+}
+
+.footer__copy {
+  margin: 0;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: inline-flex;
+  }
+}
+
+.hero {
+  padding-block: var(--space-lg);
+}
+
+.hero__banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-lg);
+  min-height: 20rem;
+  padding: var(--space-xl);
+  overflow: hidden;
+  border-radius: var(--space-xl);
+  background-color: var(--color-text);
+  color: #fff;
+}
+
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+
+.hero__title,
+.hero__text,
+.hero__cta {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__title {
+  max-width: 33rem;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.hero__accent {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero__text {
+  max-width: 33rem;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  padding: var(--space-md) var(--space-xl);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.hero__cta:hover {
+  opacity: 0.85;
+}
+
+.hero__cta:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .hero__banner {
+    justify-content: center;
+    min-height: 40rem;
+    padding: 2.5rem;
+  }
+}
+
+.slider {
+}
+
+.catalog {
+}
