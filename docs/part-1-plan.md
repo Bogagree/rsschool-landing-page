@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/home-hero
+feat/home-slider-markup
 ```
 
-Hero-секция. Спека: [hero.md](./specs/hero.md).
+Разметка слайдера без JS. Спека: [slider.md](./specs/slider.md).
 
 ---
 
@@ -30,7 +30,7 @@ main
     ├── [done] feat/choose-variant         # P-001 Coffee House + overview + assets plan
     ├── [done] feat/tokens-base            # CSS variables, base, container
     ├── [done] feat/header-footer          # specs/header.md, footer.md
-    ├── [    ] feat/home-hero              # specs/hero.md
+    ├── [done] feat/home-hero              # specs/hero.md
     ├── [    ] feat/home-slider-markup     # specs/slider.md (без JS)
     ├── [    ] feat/home-extra-sections    # specs/home-sections.md
     ├── [    ] feat/catalog-layout         # specs/catalog.md (статика)

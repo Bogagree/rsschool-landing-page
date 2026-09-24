@@ -12,7 +12,15 @@
   <body>
     <header class="header">
       <div class="header__inner container">
-        <a class="header__logo" href="index.html">Coffee House</a>
+        <a class="header__logo" href="index.html">
+          <img
+            class="header__logo-img"
+            src="assets/icons/logo.svg"
+            alt="Resource Coffee House"
+            width="100"
+            height="60"
+          />
+        </a>
         <nav class="header__nav" aria-label="Main">
           <ul class="header__list">
             <li class="header__item">
@@ -33,7 +41,22 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <button class="header__theme" type="button">Theme</button>
+          <button class="header__theme" type="button" aria-label="Theme">
+            <img
+              class="header__theme-icon header__theme-icon--light"
+              src="assets/icons/light.svg"
+              alt=""
+              width="36"
+              height="36"
+            />
+            <img
+              class="header__theme-icon header__theme-icon--dark"
+              src="assets/icons/dark.svg"
+              alt=""
+              width="36"
+              height="36"
+            />
+          </button>
           <button
             class="header__burger"
             type="button"
