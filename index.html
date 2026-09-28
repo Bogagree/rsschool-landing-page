@@ -28,7 +28,7 @@
               <a class="header__link" href="index.html#hero">Home</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="index.html#slider">Slider</a>
+              <a class="header__link" href="index.html#favorite-coffee">Slider</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="index.html#about">About</a>
@@ -95,8 +95,61 @@
           </div>
         </div>
       </section>
+      <section class="slider" id="favorite-coffee" aria-labelledby="favorite-coffee-title">
+        <div class="slider__inner container">
+          <h2 class="slider__title" id="favorite-coffee-title">
+            <em class="slider__accent">Favorite</em> coffee
+          </h2>
+          <div class="slider__layout">
+            <button
+              class="slider__control slider__control--prev"
+              type="button"
+              aria-label="Previous slide"
+              aria-disabled="true"
+            >
+              <span class="slider__chevron slider__chevron--prev" aria-hidden="true"></span>
+            </button>
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img
+                  class="slider__photo"
+                  src="assets/images/coffee-slider-1.png"
+                  alt="Iced latte with cream and caramel"
+                  width="530"
+                  height="530"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  class="slider__photo"
+                  src="assets/images/coffee-slider-2.png"
+                  alt="Layered cortado in a glass"
+                  width="530"
+                  height="530"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  class="slider__photo"
+                  src="assets/images/coffee-slider-3.png"
+                  alt="Iced coffee with ice cubes"
+                  width="530"
+                  height="530"
+                />
+              </li>
+            </ul>
+            <button
+              class="slider__control slider__control--next"
+              type="button"
+              aria-label="Next slide"
+              aria-disabled="true"
+            >
+              <span class="slider__chevron slider__chevron--next" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
       <div class="container">
-        <section class="slider" id="slider"></section>
         <section class="section" id="about"></section>
         <section class="section" id="extra"></section>
       </div>
