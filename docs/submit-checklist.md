@@ -18,8 +18,10 @@ PR Части 1: https://github.com/Bogagree/rsschool-landing-page/pull/1
 
 ## Часть 2
 
+PR: открывается из `landing-page-part-2` → `landing-page`. **Не мержить.** Ссылку вставить в Cross-Check: Submit.
+
 1. Ветка `landing-page-part-2` от `landing-page`.
-2. Обновить деплой.
+2. Обновить деплой, когда в ветке появится функциональность Части 2.
 3. PR → `landing-page` (не мержить) → Submit.
 
 ## GitHub Pages (когда есть `index.html`)

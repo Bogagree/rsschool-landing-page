@@ -4,7 +4,7 @@
 Спека: [specs/part-2.md](./specs/part-2.md).  
 Канон: [README-part-2.md](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-2.md) (**100**).
 
-База: ветка `landing-page-part-2` **от** `landing-page` (создать после сдачи Части 1).  
+База: ветка `landing-page-part-2` **от** `landing-page`.  
 Фичи мержим в `landing-page-part-2`; PR → `landing-page` **не мержить**.
 
 ---
@@ -12,14 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-blocked — сначала закрыть Part 1 и создать ветку landing-page-part-2
-```
-
-После создания ветки первый шаг:
-
-```text
 feat/catalog-data
 ```
+
+Данные каталога. Спека: [part-2.md](./specs/part-2.md).
 
 ---
 
