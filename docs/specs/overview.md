@@ -20,7 +20,7 @@
 
 ## План ассетов (ручной импорт)
 
-Figma MCP не прочитал файл: `get_metadata` для `yuc5s9NCc4jENkk5LdFfvX` вернул отсутствие edit access. Пользователь выгрузил файлы сам. Фото лежат в `assets/images/`, SVG шапки — в `assets/icons/` (`logo.svg`, `light.svg`, `dark.svg`). В разметке этого шага используется hero и иконки шапки. Слайдер, about и карточки в HTML пока не подключены.
+Figma MCP не прочитал файл: `get_metadata` для `yuc5s9NCc4jENkk5LdFfvX` вернул отсутствие edit access. Пользователь выгрузил файлы сам. Фото лежат в `assets/images/`, SVG шапки — в `assets/icons/` (`logo.svg`, `light.svg`, `dark.svg`). В разметке подключены hero, иконки шапки и слайдер (`coffee-slider-1.png` … `coffee-slider-3.png`). About и карточки в HTML пока не подключены. Стрелок слайдера в `assets/icons/` нет.
 
 Отдельные node id слоёв неизвестны. Единственный известный id — страница `0:1`. Экспорт делает пользователь из этой страницы (фреймы Home и Menu, ширины макета, обе темы).
 

@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/home-slider-markup
+feat/home-extra-sections
 ```
 
-Разметка слайдера без JS. Спека: [slider.md](./specs/slider.md).
+Дополнительные секции главной. Спека: [home-sections.md](./specs/home-sections.md).
 
 ---
 
@@ -31,7 +31,7 @@ main
     ├── [done] feat/tokens-base            # CSS variables, base, container
     ├── [done] feat/header-footer          # specs/header.md, footer.md
     ├── [done] feat/home-hero              # specs/hero.md
-    ├── [    ] feat/home-slider-markup     # specs/slider.md (без JS)
+    ├── [done] feat/home-slider-markup     # specs/slider.md (без JS)
     ├── [    ] feat/home-extra-sections    # specs/home-sections.md
     ├── [    ] feat/catalog-layout         # specs/catalog.md (статика)
     ├── [    ] feat/responsive             # 1440 / 768 / 380
