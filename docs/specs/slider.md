@@ -33,4 +33,4 @@ Figma MCP по-прежнему без edit access, node слайдера неи
 | Controls | `button.slider__control` prev/next, `aria-disabled="true"`, без `disabled` и без JS. Стрелок в `assets/icons/` нет — шевроны на CSS, как полосы бургера |
 | Индикаторы | Не добавлены: в плане ассетов есть стрелки, отдельных индикаторов нет, макет не прочитан |
 
-Колонка — `.slider__inner.container`. Пустые about/extra остаются в своей обёртке `.container`.
+Колонка — `.slider__inner.container`. About и Extra — отдельные секции (`feat/home-extra-sections`).

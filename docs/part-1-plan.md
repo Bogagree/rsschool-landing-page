@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/home-extra-sections
+feat/catalog-layout
 ```
 
-Дополнительные секции главной. Спека: [home-sections.md](./specs/home-sections.md).
+Статичный каталог. Спека: [catalog.md](./specs/catalog.md).
 
 ---
 
@@ -32,7 +32,7 @@ main
     ├── [done] feat/header-footer          # specs/header.md, footer.md
     ├── [done] feat/home-hero              # specs/hero.md
     ├── [done] feat/home-slider-markup     # specs/slider.md (без JS)
-    ├── [    ] feat/home-extra-sections    # specs/home-sections.md
+    ├── [done] feat/home-extra-sections    # specs/home-sections.md
     ├── [    ] feat/catalog-layout         # specs/catalog.md (статика)
     ├── [    ] feat/responsive             # 1440 / 768 / 380
     ├── [    ] feat/theme-localstorage     # specs/theme.md
