@@ -1,4 +1,4 @@
-/* header, footer, hero, slider. cards, modal — позже. */
+/* header, footer, hero, slider, about, extra. cards, modal — позже. */
 .header {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -327,6 +327,39 @@
     grid-template-columns: 1fr;
     order: -1;
   }
+}
+
+.about,
+.extra {
+  padding-block: var(--space-lg);
+}
+
+.about__title,
+.extra__title {
+  margin-bottom: var(--space-lg);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.about__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.about__photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.extra__photo {
+  width: min(100%, 40rem);
+  height: auto;
+  margin-inline: auto;
 }
 
 .catalog {
