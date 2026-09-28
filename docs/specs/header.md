@@ -40,7 +40,7 @@
 | Подпись | href |
 | --- | --- |
 | Home | `index.html#hero` |
-| Slider | `index.html#slider` |
+| Slider | `index.html#favorite-coffee` |
 | About | `index.html#about` |
 | Extra | `index.html#extra` |
 | Menu | `menu.html` |
