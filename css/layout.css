@@ -1,0 +1,13 @@
+/* Centered content column. Full-bleed backgrounds stay off .container. */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline);
+}
+
+/* Above 1440px the column stays centered; section backgrounds may full-bleed. */
+.main {
+  width: 100%;
+  min-width: 0;
+}

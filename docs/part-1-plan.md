@@ -1,0 +1,46 @@
+# Part 1 — план шагов
+
+Общие правила: [implementation-plan.md](./implementation-plan.md).  
+Спека: [specs/part-1.md](./specs/part-1.md).  
+Канон: [README-part-1.md](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-1.md) (**100**).
+
+База: ветка `landing-page`. Фичи мержим сюда; PR `landing-page` → `main` на cross-check **не мержить**.
+
+---
+
+## Next (для нового чата)
+
+```text
+Part 1 feature steps are done. Do not start Part 2 from this PR — see docs/part-2-plan.md.
+```
+
+---
+
+## Шаги
+
+Маркер `[done]` = влито в `landing-page`.
+
+```text
+main
+└── landing-page
+    ├── [done] feat/sdd-skeleton           # docs SDD по образцу minigames
+    ├── [done] feat/folder-scaffold        # index/menu + css/js/assets/data каркас
+    ├── [done] feat/choose-variant         # P-001 Coffee House + overview + assets plan
+    ├── [done] feat/tokens-base            # CSS variables, base, container
+    ├── [done] feat/header-footer          # specs/header.md, footer.md
+    ├── [done] feat/home-hero              # specs/hero.md
+    ├── [done] feat/home-slider-markup     # specs/slider.md (без JS)
+    ├── [done] feat/home-extra-sections    # specs/home-sections.md
+    ├── [done] feat/catalog-layout         # specs/catalog.md (статика)
+    ├── [done] feat/responsive             # 1440 / 768 / 380
+    ├── [done] feat/theme-localstorage     # specs/theme.md
+    └── [done] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
+```
+
+---
+
+## Пока не делать
+
+- Логику бургера, слайдера, категорий, модалки (Часть 2)
+- TypeScript / React / UI-библиотеки
+- Merge PR `landing-page` → `main`
