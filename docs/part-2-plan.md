@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/catalog-data
+feat/burger-menu
 ```
 
-Данные каталога. Спека: [part-2.md](./specs/part-2.md).
+Бургер-меню. Спека: [burger-menu.md](./specs/burger-menu.md).
 
 ---
 
@@ -24,7 +24,7 @@ feat/catalog-data
 ```text
 landing-page
 └── landing-page-part-2
-    ├── [    ] feat/catalog-data           # data/products.json + динамический рендер
+    ├── [done] feat/catalog-data           # data/products.json + динамический рендер
     ├── [    ] feat/burger-menu            # specs/burger-menu.md
     ├── [    ] feat/slider-logic           # specs/slider.md Part 2
     ├── [    ] feat/catalog-categories     # переключение категорий
