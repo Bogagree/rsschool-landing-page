@@ -1,6 +1,6 @@
 # Catalog
 
-Страница каталога (черновик файла: `menu.html`).
+Страница каталога (файл: `menu.html`).
 
 ## Scope
 
@@ -23,3 +23,21 @@
 ## Out of scope
 
 - Корзина / оформление заказа
+
+## Реализация (feat/catalog-layout)
+
+Статика на `menu.html`. Figma MCP по-прежнему без edit access; слоган меню из макета не выдуман — `h1` = `Menu`. Иконки категорий и refresh show-more в `assets/icons/` нет, в разметке их нет. Тексты и цены карточек — из [products.json](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/products.json) курса. Фото — уже лежащие `coffee-1.jpg` … `coffee-8.jpg`.
+
+| Элемент | Контракт |
+| --- | --- |
+| Секция | `section.catalog#catalog` в `main.main`, колонка `.catalog__inner.container` |
+| Заголовок | Один `h1.catalog__title`: `Menu` |
+| Категории | Три `button.catalog__tab` (Coffee / Tea / Dessert), `data-category`, `role="group"`. Активна Coffee (`catalog__tab--active`, `aria-pressed="true"`). Tea и Dessert — UI only, `aria-disabled="true"` (логика — Часть 2) |
+| Карточки | 8 `article.card` в категории coffee: фото, `h2.card__title`, `p.card__text`, `p.card__price` (`$…`). На ≥769px — сетка 4 колонки, все 8 видны. При ≤768 — 2 колонки; `.catalog__item:nth-child(n + 5)` скрыты CSS (макет Coffee House) |
+| Show-more | `button.catalog__more` «Show more», `aria-disabled="true"`. Видна только при ≤768 (`display: flex`); на десктопе скрыта. Клик — Часть 2 |
+
+## Адаптив (feat/responsive)
+
+- Без горизонтального скролла 1440 → 380; >1440 колонка по центру.
+- Hover интерактивов — внутри `@media (hover: hover)`.
+- Логика show-more / категорий — не этот шаг.

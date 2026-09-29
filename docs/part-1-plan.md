@@ -11,10 +11,8 @@
 ## Next (для нового чата)
 
 ```text
-feat/home-slider-markup
+Part 1 feature steps are done. Do not start Part 2 from this PR — see docs/part-2-plan.md.
 ```
-
-Разметка слайдера без JS. Спека: [slider.md](./specs/slider.md).
 
 ---
 
@@ -31,12 +29,12 @@ main
     ├── [done] feat/tokens-base            # CSS variables, base, container
     ├── [done] feat/header-footer          # specs/header.md, footer.md
     ├── [done] feat/home-hero              # specs/hero.md
-    ├── [    ] feat/home-slider-markup     # specs/slider.md (без JS)
-    ├── [    ] feat/home-extra-sections    # specs/home-sections.md
-    ├── [    ] feat/catalog-layout         # specs/catalog.md (статика)
-    ├── [    ] feat/responsive             # 1440 / 768 / 380
-    ├── [    ] feat/theme-localstorage     # specs/theme.md
-    └── [    ] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
+    ├── [done] feat/home-slider-markup     # specs/slider.md (без JS)
+    ├── [done] feat/home-extra-sections    # specs/home-sections.md
+    ├── [done] feat/catalog-layout         # specs/catalog.md (статика)
+    ├── [done] feat/responsive             # 1440 / 768 / 380
+    ├── [done] feat/theme-localstorage     # specs/theme.md
+    └── [done] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
 ```
 
 ---

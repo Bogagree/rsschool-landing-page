@@ -20,7 +20,7 @@
 
 ## План ассетов (ручной импорт)
 
-Figma MCP не прочитал файл: `get_metadata` для `yuc5s9NCc4jENkk5LdFfvX` вернул отсутствие edit access. Пользователь выгрузил файлы сам. Фото лежат в `assets/images/`, SVG шапки — в `assets/icons/` (`logo.svg`, `light.svg`, `dark.svg`). В разметке этого шага используется hero и иконки шапки. Слайдер, about и карточки в HTML пока не подключены.
+Figma MCP не прочитал файл: `get_metadata` для `yuc5s9NCc4jENkk5LdFfvX` вернул отсутствие edit access. Пользователь выгрузил файлы сам. Фото лежат в `assets/images/`, SVG шапки — в `assets/icons/` (`logo.svg`, `light.svg`, `dark.svg`). В разметке подключены hero, иконки шапки, слайдер (`coffee-slider-1.png` … `coffee-slider-3.png`), about (`about-1.jpg` … `about-4.jpg`), `mobile-screens.png` и карточки меню (`coffee-1.jpg` … `coffee-8.jpg`). Стрелок слайдера и иконок категорий/show-more в `assets/icons/` нет.
 
 Отдельные node id слоёв неизвестны. Единственный известный id — страница `0:1`. Экспорт делает пользователь из этой страницы (фреймы Home и Menu, ширины макета, обе темы).
 
@@ -29,7 +29,7 @@ Figma MCP не прочитал файл: `get_metadata` для `yuc5s9NCc4jENkk
 | Изображения контента Home и Menu (hero, слайдер, остальные секции, карточки) | `assets/images/` | выгружены: hero, about, slider, coffee, tea, dessert, mobile-screens |
 | Иконки (логотип, бургер, закрытие, стрелки слайдера, соцсети, переключатель темы) | `assets/icons/` | есть `logo.svg`, `light.svg`, `dark.svg`. Бургер, стрелки и соцсети — нет |
 | Файлы шрифтов, если макет отдаёт файлы, а не ссылку на веб-шрифт | `assets/fonts/` | неизвестен (внутри `0:1`) |
-| Favicon | `assets/favicon.svg` (или `.ico` / `.png`, если в макете не SVG) | неизвестен (внутри `0:1`) |
+| Favicon | `assets/icons/logo.svg` (тот же экспорт логотипа, `rel=icon`; отдельного favicon в макете нет) | тот же, что logo |
 
 Имена файлов — по именам слоёв в Figma, латиницей, kebab-case. Не перерисовывать и не подменять иллюстрации.
 

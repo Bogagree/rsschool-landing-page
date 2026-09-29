@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee House</title>
-    <!-- favicon: после появления файла в assets/ -->
+    <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
@@ -25,23 +25,21 @@
         <nav class="header__nav" aria-label="Main">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="index.html#hero">Home</a>
+              <a class="header__link" href="#favorite-coffee">Favorite coffee</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="index.html#slider">Slider</a>
+              <a class="header__link" href="#about">About</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="index.html#about">About</a>
+              <a class="header__link" href="#extra">Mobile app</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="index.html#extra">Extra</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="menu.html">Menu</a>
+              <a class="header__link" href="#contact">Contact us</a>
             </li>
           </ul>
         </nav>
         <div class="header__actions">
+          <a class="header__menu" href="menu.html">Menu</a>
           <button class="header__theme" type="button" aria-label="Theme">
             <img
               class="header__theme-icon header__theme-icon--light"
@@ -95,45 +93,257 @@
           </div>
         </div>
       </section>
-      <div class="container">
-        <section class="slider" id="slider"></section>
-        <section class="section" id="about"></section>
-        <section class="section" id="extra"></section>
-      </div>
+      <section class="slider" id="favorite-coffee" aria-labelledby="favorite-coffee-title">
+        <div class="slider__inner container">
+          <h2 class="slider__title" id="favorite-coffee-title">
+            Choose your <em class="slider__accent">favorite</em> coffee
+          </h2>
+          <div class="slider__layout">
+            <button
+              class="slider__control slider__control--prev"
+              type="button"
+              aria-label="Previous slide"
+              aria-disabled="true"
+            >
+              <span class="slider__chevron slider__chevron--prev" aria-hidden="true"></span>
+            </button>
+            <div class="slider__stage">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img
+                  class="slider__photo"
+                  src="assets/images/coffee-slider-1.png"
+                  alt="S'mores Frappuccino in a tall glass"
+                  width="530"
+                  height="530"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  class="slider__photo"
+                  src="assets/images/coffee-slider-2.png"
+                  alt="Layered cortado in a glass"
+                  width="530"
+                  height="530"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  class="slider__photo"
+                  src="assets/images/coffee-slider-3.png"
+                  alt="Iced coffee with ice cubes"
+                  width="530"
+                  height="530"
+                />
+              </li>
+            </ul>
+            <div class="slider__caption">
+              <p class="slider__name">S'mores Frappuccino</p>
+              <p class="slider__text">
+                This new drink takes an espresso shot mixed with brown sugar and
+                cinnamon before being topped with oat milk.
+              </p>
+              <p class="slider__price">$5.50</p>
+            </div>
+            </div>
+            <button
+              class="slider__control slider__control--next"
+              type="button"
+              aria-label="Next slide"
+              aria-disabled="true"
+            >
+              <span class="slider__chevron slider__chevron--next" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__inner container">
+          <h2 class="about__title" id="about-title">
+            Resource is <em class="about__accent">the perfect and cozy place</em>
+            where you can enjoy a variety of hot beverages, relax, catch up with
+            friends, or get some work done.
+          </h2>
+          <ul class="about__gallery">
+            <li class="about__col">
+              <img
+                class="about__photo about__photo--tall about__photo--woman"
+                src="assets/images/about-1.jpg"
+                alt="Woman in pink glasses stirring coffee at a cafe table"
+                width="726"
+                height="726"
+              />
+              <img
+                class="about__photo about__photo--short about__photo--lights"
+                src="assets/images/about-2.jpg"
+                alt="Espresso cup on a saucer with warm string lights"
+                width="726"
+                height="726"
+              />
+            </li>
+            <li class="about__col">
+              <img
+                class="about__photo about__photo--short about__photo--man"
+                src="assets/images/about-3.jpg"
+                alt="Man drinking coffee while working on a laptop"
+                width="726"
+                height="726"
+              />
+              <img
+                class="about__photo about__photo--tall about__photo--couple"
+                src="assets/images/about-4.jpg"
+                alt="Couple smiling with coffee cups at an outdoor table"
+                width="726"
+                height="726"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="extra" id="extra" aria-labelledby="extra-title">
+        <div class="extra__inner container">
+          <div class="extra__copy">
+            <h2 class="extra__title" id="extra-title">
+              Download <em class="extra__accent">our app</em> to start ordering
+            </h2>
+            <p class="extra__text">
+              Download the Resource app today and experience the comfort of
+              ordering your favorite coffee from wherever you are.
+            </p>
+            <div class="extra__stores">
+              <a
+                class="extra__store"
+                href="https://www.apple.com/app-store/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >App Store</a
+              >
+              <a
+                class="extra__store"
+                href="https://play.google.com/store"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google Play</a
+              >
+            </div>
+          </div>
+          <img
+            class="extra__photo"
+            src="assets/images/mobile-screens.png"
+            alt="Coffee House app on two phones, with a menu and an espresso order"
+            width="630"
+            height="630"
+          />
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="footer__inner container">
-        <p class="footer__copy">© 2026 Coffee House</p>
-        <address class="footer__contacts">
-          <a class="footer__link" href="tel:+375290000000">+375 29 000-00-00</a>
-          <a
-            class="footer__link"
-            href="https://www.google.com/maps/search/?api=1&query=Minsk"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Minsk</a
-          >
-        </address>
-        <ul class="footer__list">
-          <li class="footer__item">
+    <footer class="footer" id="contact">
+      <div class="footer__panel container">
+        <div class="footer__brand">
+          <p class="footer__slogan">
+            <span class="footer__line">Sip, Savor, Smile.</span>
+            <em class="footer__accent">It's coffee time!</em>
+          </p>
+          <ul class="footer__social">
+            <li>
+              <a
+                class="footer__social-link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M19.5 7.2c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.7-2.1.8A3.2 3.2 0 0 0 12 9.3c0 .3 0 .5.1.7-2.7-.1-5-1.4-6.6-3.4-.3.5-.4 1-.4 1.6 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.2 3.1 2.3A6.5 6.5 0 0 1 5 16.6 9.1 9.1 0 0 0 10 18c5 0 7.7-4.1 7.7-7.7v-.4c.5-.4 1-.9 1.3-1.5-.5.2-1 .4-1.5.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <circle cx="12" cy="12" r="3.5" />
+                  <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__social-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14 9h2.5V6H14c-2.2 0-3.5 1.4-3.5 3.6V12H8v3h2.5v6H14v-6h2.2l.5-3H14V9.6c0-.4.2-.6.6-.6z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a
+                class="footer__link"
+                href="https://github.com/Bogagree"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link"
+                href="https://rs.school/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >RS School</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <p class="footer__title">Contact us</p>
+          <address class="footer__contacts">
             <a
-              class="footer__link"
-              href="https://github.com/Bogagree"
+              class="footer__row"
+              href="https://www.google.com/maps/search/?api=1&query=8558+Green+Rd.%2C+LA"
               target="_blank"
               rel="noopener noreferrer"
-              >GitHub</a
             >
-          </li>
-          <li class="footer__item">
-            <a
-              class="footer__link"
-              href="https://rs.school/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >RS School</a
-            >
-          </li>
-        </ul>
+              <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" />
+                <circle cx="12" cy="10" r="2.2" />
+              </svg>
+              <span>8558 Green Rd., LA</span>
+            </a>
+            <a class="footer__row" href="tel:+16035550123">
+              <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 3.5h3.2l1.2 3.2-2 1.2a12 12 0 0 0 5.7 5.7l1.2-2 3.2 1.2V17a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 6.7 2 2 0 0 1 7 3.5z"
+                />
+              </svg>
+              <span>+1 (603) 555-0123</span>
+            </a>
+            <span class="footer__row">
+              <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M12 8v4.5l3 2" />
+              </svg>
+              <span>Mon–Sat: 9:00–23:00</span>
+            </span>
+          </address>
+        </div>
       </div>
     </footer>
     <script src="js/theme.js" defer></script>

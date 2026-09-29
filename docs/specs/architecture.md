@@ -52,20 +52,22 @@ docs/               → SDD (не в runtime)
 | Семантические цвета | `css/themes.css` | Наборы light/dark на `:root`, `[data-theme='light']`, `[data-theme='dark']` |
 | Колонка | `css/layout.css` | `.container` |
 
-Переключатель и `localStorage` — `feat/theme-localstorage` ([theme.md](./theme.md)), не этот шаг.
+Переключатель и `localStorage` — `js/theme.js` ([theme.md](./theme.md), `feat/theme-localstorage`).
 
-`.container`: `width: 100%`, `max-width: var(--container-max-width)` (1440px — десктоп из критериев курса), `margin-inline: auto`. Фон секции не вешать на `.container`: выше 1440px колонка по центру, фон может быть на всю ширину. На главной `.container` стоит на `.hero__inner` и на обёртке пустых соседних секций, не на `<main>`.
+`.container`: `width: 100%`, `max-width: var(--container-max-width)` (1440px — десктоп из критериев курса), `margin-inline: auto`. Фон секции не вешать на `.container`: выше 1440px колонка по центру, фон может быть на всю ширину. На главной `.container` стоит на `.hero__inner`, `.slider__inner`, `.about__inner` и `.extra__inner`, не на `<main>`.
 
-`get_variable_defs` для fileKey `yuc5s9NCc4jENkk5LdFfvX`, node `0:1` вернул отсутствие edit access. Повтор не делался, бинарники не скачивались. Цвета в `themes.css` — системные `Canvas` / `CanvasText` / `LinkText` и `color-scheme`, не палитра макета. Числа отступов и кегля — структурный каркас, не замеры Figma. Когда переменные макета появятся, подставить их в эти же имена; каркас не выдавать за бренд.
+Цвета светлой темы сняты с кадра `docs/qa/screenshots/[D] Home.png`: фон `#E1D4C9`, текст `#403F3D`, плашка футера `#665F55`. Тёмная тема без кадра: тёмный фон и тот же светлый текст.
 
 ## Breakpoints (проверка курса)
 
 | Ширина | Фокус |
 | --- | --- |
 | 1440px | Desktop-дизайн |
-| 768px | Tablet; бургер-кнопка |
-| 380px | Mobile |
+| 768px | Tablet; бургер-кнопка; About −2 фото; Menu −4 карточки + Show more; слайдер — 1 кадр |
+| 380px | Mobile; padding колонки 1rem; About — 1 колонка |
 | > 1440px | Контент по центру |
 | < 380px | Не проверяется |
 
-Промежуточные брейкпоинты — на усмотрение; горизонтального скролла быть не должно.
+Промежуточные брейкпоинты — на усмотрение; горизонтального скролла быть не должно. `html`/`body`: `overflow-x: clip`. Hover интерактивов — `@media (hover: hover)`.
+
+`--container-padding-inline`: 2.5rem по умолчанию и на ≤768; 1rem на ≤380.

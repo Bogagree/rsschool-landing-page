@@ -1,15 +1,19 @@
-/* Semantic colors. Not the Coffee House palette — docs/specs/architecture.md */
+/* Sampled from docs/qa/screenshots/[D] Home.png. Dark set has no frame yet. */
 :root,
 [data-theme='light'] {
   color-scheme: light;
-  --color-bg: Canvas;
-  --color-text: CanvasText;
-  --color-link: LinkText;
+  --color-bg: #e1d4c9;
+  --color-text: #403f3d;
+  --color-link: #403f3d;
+  --color-footer: #665f55;
+  --color-on-footer: #e1d4c9;
 }
 
 [data-theme='dark'] {
   color-scheme: dark;
-  --color-bg: Canvas;
-  --color-text: CanvasText;
-  --color-link: LinkText;
+  --color-bg: #2a2420;
+  --color-text: #e1d4c9;
+  --color-link: #e1d4c9;
+  --color-footer: #1c1816;
+  --color-on-footer: #e1d4c9;
 }

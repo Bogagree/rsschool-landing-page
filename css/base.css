@@ -7,6 +7,7 @@
   --space-xl: 2rem;
 
   --font-family-base: system-ui, sans-serif;
+  --font-family-accent: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
   --font-size-base: 1rem;
   --font-size-sm: 0.875rem;
   --font-size-lg: 1.25rem;
@@ -17,7 +18,19 @@
   --font-weight-bold: 700;
 
   --container-max-width: 1440px;
-  --container-padding-inline: var(--space-md);
+  --container-padding-inline: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding-inline: 2.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --container-padding-inline: 1rem;
+  }
 }
 
 *,
@@ -28,10 +41,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
+  overflow-x: clip;
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
