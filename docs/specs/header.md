@@ -39,10 +39,10 @@
 
 | Подпись | href |
 | --- | --- |
-| Home | `index.html#hero` |
-| Slider | `index.html#favorite-coffee` |
-| About | `index.html#about` |
-| Extra | `index.html#extra` |
-| Menu | `menu.html` |
+| Favorite coffee | `#favorite-coffee` (с каталога `index.html#favorite-coffee`) |
+| About | `#about` |
+| Mobile app | `#extra` |
+| Contact us | `#contact` |
+| Menu | `a.header__menu` → `menu.html`, на десктопе справа. На ≤768 скрыта вместе с nav; видна кнопка бургера |
 
 Когда `feat/home-*` переименует id секций под макет, в том же шаге обновить эту таблицу и href. SVG бургера подставить вместо CSS-полос, когда файл появится в `assets/icons/`.

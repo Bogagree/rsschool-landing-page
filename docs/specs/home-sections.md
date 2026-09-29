@@ -17,13 +17,13 @@ Figma MCP по-прежнему без edit access, тексты слоёв не
 
 | Элемент | Контракт |
 | --- | --- |
-| About | `section.about#about`. Четыре `img` 726×726: `about-1.jpg` … `about-4.jpg`, сетка 2×2 на ≥769px. При ≤768 скрыты 3-я и 4-я (макет Coffee House). При ≤380 оставшиеся две — в одну колонку |
-| Extra | `section.extra#extra`. Один `img`: `mobile-screens.png` 630×630, экраны приложения |
+| About | `section.about#about`. Цитата из `[D] Home`. Десктоп — две колонки: слева tall woman и short lights, справа short man и tall couple (зазор ~40px, не равные квадраты). ≤768 — woman и couple столбиком. ≤380 — только couple |
+| Extra | `section.extra#extra`. Заголовок «Download our app to start ordering», текст, ссылки App Store и Google Play, `mobile-screens.png` справа. ≤768 — столбик: текст, кнопки, телефоны |
 
 Колонки — `.about__inner.container` и `.extra__inner.container`.
 
 ## Адаптив (feat/responsive)
 
-- ≤768: `.about__item:nth-child(n + 3) { display: none }` — без JS.
-- ≤380: `.about__gallery` — одна колонка.
+- Ориентир: `docs/qa/screenshots/[D] Home.png`, `[T] Home.jpg`, `[M] Home.jpg`.
+- Фон страницы `#E1D4C9`, текст `#403F3D` — замер кадра `[D]`.
 - Горизонтального скролла нет; >1440 контент по центру.

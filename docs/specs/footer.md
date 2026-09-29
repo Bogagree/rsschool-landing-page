@@ -23,4 +23,6 @@
 | Адрес | `8558 Green Rd., LA` → `https://www.google.com/maps/search/?api=1&query=8558+Green+Rd.%2C+LA`, `target="_blank"`, `rel="noopener noreferrer"` |
 | Часы | `Mon–Sat: 9:00–23:00` |
 | Внешние ссылки | [GitHub](https://github.com/Bogagree), [RS School](https://rs.school/) — новая вкладка |
-| Доп. информация | `© 2026 Coffee House` |
+| Слоган | `Sip, Savor, Smile.` цветом страницы, следующая строка `It's coffee time!` курсивом `#b0907a` |
+| Соцсети | Круглые кнопки Twitter, Instagram, Facebook. GitHub и RS School остаются текстовыми ссылками |
+| Контакты | Слева иконка, справа текст: адрес, телефон, часы. На ≥769 колонка справа от слогана; на ≤768 под иконками |

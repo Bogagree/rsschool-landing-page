@@ -1,6 +1,8 @@
 # QA — отчёты фабрики
 
-Отчёты: `docs/qa/<feat-slug>.md` (вердикт и заметки, **без** PNG в git). Контракт: [D-007](../decisions.md), скилл `.cursor/skills/landing-page-qa/SKILL.md`.
+Отчёты: `docs/qa/<feat-slug>.md` (вердикт и заметки, без PNG прогона в git). Контракт: [D-007](../decisions.md), скилл `.cursor/skills/landing-page-qa/SKILL.md`.
+
+Кадры макета для сверки: `docs/qa/screenshots/`. Имена: `[D]` десктоп, `[T]` планшет, `[M]` мобилка, дальше название страницы (`[D] Home.png`, позже `[D] Menu.png`). Это ориентир, не вёрстка скриншотом.
 
 Проверки шага — чеклист курса, не pixel-perfect 375/768/1920:
 
