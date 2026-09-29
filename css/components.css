@@ -188,7 +188,7 @@
   overflow: hidden;
   border-radius: var(--space-xl);
   background-color: var(--color-text);
-  color: #fff;
+  color: var(--color-bg);
 }
 
 .hero__photo {

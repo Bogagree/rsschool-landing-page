@@ -52,7 +52,7 @@ docs/               → SDD (не в runtime)
 | Семантические цвета | `css/themes.css` | Наборы light/dark на `:root`, `[data-theme='light']`, `[data-theme='dark']` |
 | Колонка | `css/layout.css` | `.container` |
 
-Переключатель и `localStorage` — `feat/theme-localstorage` ([theme.md](./theme.md)), не этот шаг.
+Переключатель и `localStorage` — `js/theme.js` ([theme.md](./theme.md), `feat/theme-localstorage`).
 
 `.container`: `width: 100%`, `max-width: var(--container-max-width)` (1440px — десктоп из критериев курса), `margin-inline: auto`. Фон секции не вешать на `.container`: выше 1440px колонка по центру, фон может быть на всю ширину. На главной `.container` стоит на `.hero__inner`, `.slider__inner`, `.about__inner` и `.extra__inner`, не на `<main>`.
 
