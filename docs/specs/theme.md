@@ -14,7 +14,7 @@
 - Токены в `css/themes.css` / `base.css` (через `color-scheme` + системные `Canvas` / `CanvasText` / `LinkText`).
 - Логика: `js/theme.js`, подключение на обеих страницах (`defer`).
 - Кнопка уже в header: `.header__theme` на обеих страницах (`feat/header-footer`). Этот шаг вешает на неё переключение и `localStorage` (ключ `theme`, значения `light` | `dark`). Без сохранённого значения — светлая тема. Вторая кнопка не добавляется.
-- Состояние иконки: светлая — `light.svg`, при `data-theme="dark"` — `dark.svg` (CSS в `components.css`).
+- Состояние переключателя: капсула с солнцем и луной. Светлая тема подсвечивает солнце, тёмная — луну (`css/components.css`).
 - `prefers-color-scheme` не источник истины в этом шаге.
 - Исключение: copy поверх hero-фото остаётся белым в обеих темах ([hero.md](./hero.md)); не привязывать его к `--color-bg`.
 

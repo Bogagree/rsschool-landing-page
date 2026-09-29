@@ -28,8 +28,13 @@
     }
   }
 
+  var button = document.querySelector('.header__theme');
+
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
+    if (button) {
+      button.setAttribute('aria-pressed', theme === DARK ? 'true' : 'false');
+    }
   }
 
   function currentTheme() {
@@ -48,7 +53,6 @@
 
   applyTheme(readStored() || LIGHT);
 
-  var button = document.querySelector('.header__theme');
   if (button) {
     button.addEventListener('click', toggleTheme);
   }
