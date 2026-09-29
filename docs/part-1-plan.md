@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/catalog-layout
+feat/responsive
 ```
 
-Статичный каталог. Спека: [catalog.md](./specs/catalog.md).
+Адаптив 1440 / 768 / 380. Спека: [part-1.md](./specs/part-1.md).
 
 ---
 
@@ -33,7 +33,7 @@ main
     ├── [done] feat/home-hero              # specs/hero.md
     ├── [done] feat/home-slider-markup     # specs/slider.md (без JS)
     ├── [done] feat/home-extra-sections    # specs/home-sections.md
-    ├── [    ] feat/catalog-layout         # specs/catalog.md (статика)
+    ├── [done] feat/catalog-layout         # specs/catalog.md (статика)
     ├── [    ] feat/responsive             # 1440 / 768 / 380
     ├── [    ] feat/theme-localstorage     # specs/theme.md
     └── [    ] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
