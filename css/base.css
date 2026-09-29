@@ -17,7 +17,19 @@
   --font-weight-bold: 700;
 
   --container-max-width: 1440px;
-  --container-padding-inline: var(--space-md);
+  --container-padding-inline: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding-inline: 2.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --container-padding-inline: 1rem;
+  }
 }
 
 *,
@@ -28,10 +40,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
+  overflow-x: clip;
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);

@@ -17,7 +17,13 @@ Figma MCP по-прежнему без edit access, тексты слоёв не
 
 | Элемент | Контракт |
 | --- | --- |
-| About | `section.about#about`. Четыре `img` 726×726: `about-1.jpg` … `about-4.jpg`, сетка 2×2 |
+| About | `section.about#about`. Четыре `img` 726×726: `about-1.jpg` … `about-4.jpg`, сетка 2×2 на ≥769px. При ≤768 скрыты 3-я и 4-я (макет Coffee House). При ≤380 оставшиеся две — в одну колонку |
 | Extra | `section.extra#extra`. Один `img`: `mobile-screens.png` 630×630, экраны приложения |
 
 Колонки — `.about__inner.container` и `.extra__inner.container`.
+
+## Адаптив (feat/responsive)
+
+- ≤768: `.about__item:nth-child(n + 3) { display: none }` — без JS.
+- ≤380: `.about__gallery` — одна колонка.
+- Горизонтального скролла нет; >1440 контент по центру.

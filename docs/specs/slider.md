@@ -29,8 +29,14 @@ Figma MCP по-прежнему без edit access, node слайдера неи
 | Элемент | Контракт |
 | --- | --- |
 | Секция | `section.slider#favorite-coffee` на главной. Якорь nav: `index.html#favorite-coffee` (подпись ссылки остаётся `Slider`) |
-| Элементы | Три `li` с `img`: `coffee-slider-1.png` (iced latte), `coffee-slider-2.png` (cortado), `coffee-slider-3.png` (iced coffee). PNG 530×530, RGBA |
+| Элементы | Три `li` с `img`: `coffee-slider-1.png` (iced latte), `coffee-slider-2.png` (cortado), `coffee-slider-3.png` (iced coffee). PNG 530×530, RGBA. На ≥769px — три в ряд. При ≤768 виден только первый слайд (CSS); переключение — Часть 2 |
 | Controls | `button.slider__control` prev/next, `aria-disabled="true"`, без `disabled` и без JS. Стрелок в `assets/icons/` нет — шевроны на CSS, как полосы бургера |
 | Индикаторы | Не добавлены: в плане ассетов есть стрелки, отдельных индикаторов нет, макет не прочитан |
 
 Колонка — `.slider__inner.container`. About и Extra — отдельные секции (`feat/home-extra-sections`).
+
+## Адаптив (feat/responsive)
+
+- ≤768: `.slider__list` — одна колонка; `.slider__item:nth-child(n + 2) { display: none }`.
+- ≤380: controls под фото в один ряд (`order` на list).
+- Без горизонтального скролла.
