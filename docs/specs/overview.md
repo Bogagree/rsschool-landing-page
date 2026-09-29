@@ -29,7 +29,7 @@ Figma MCP не прочитал файл: `get_metadata` для `yuc5s9NCc4jENkk
 | Изображения контента Home и Menu (hero, слайдер, остальные секции, карточки) | `assets/images/` | выгружены: hero, about, slider, coffee, tea, dessert, mobile-screens |
 | Иконки (логотип, бургер, закрытие, стрелки слайдера, соцсети, переключатель темы) | `assets/icons/` | есть `logo.svg`, `light.svg`, `dark.svg`. Бургер, стрелки и соцсети — нет |
 | Файлы шрифтов, если макет отдаёт файлы, а не ссылку на веб-шрифт | `assets/fonts/` | неизвестен (внутри `0:1`) |
-| Favicon | `assets/favicon.svg` (или `.ico` / `.png`, если в макете не SVG) | неизвестен (внутри `0:1`) |
+| Favicon | `assets/icons/logo.svg` (тот же экспорт логотипа, `rel=icon`; отдельного favicon в макете нет) | тот же, что logo |
 
 Имена файлов — по именам слоёв в Figma, латиницей, kebab-case. Не перерисовывать и не подменять иллюстрации.
 

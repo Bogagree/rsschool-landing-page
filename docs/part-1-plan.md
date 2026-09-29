@@ -11,10 +11,8 @@
 ## Next (для нового чата)
 
 ```text
-feat/polish-validate-deploy
+Part 1 feature steps are done. Do not start Part 2 from this PR — see docs/part-2-plan.md.
 ```
-
-W3C, hover, favicon, Pages, PR body.
 
 ---
 
@@ -36,7 +34,7 @@ main
     ├── [done] feat/catalog-layout         # specs/catalog.md (статика)
     ├── [done] feat/responsive             # 1440 / 768 / 380
     ├── [done] feat/theme-localstorage     # specs/theme.md
-    └── [    ] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
+    └── [done] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
 ```
 
 ---
