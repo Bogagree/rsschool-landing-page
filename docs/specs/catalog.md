@@ -41,3 +41,11 @@
 - Без горизонтального скролла 1440 → 380; >1440 колонка по центру.
 - Hover интерактивов — внутри `@media (hover: hover)`.
 - Логика show-more / категорий — не этот шаг.
+
+## Данные и рендер (feat/catalog-data)
+
+- Источник: `data/products.json` — копия [products.json](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/products.json) курса (поля без URL картинок).
+- Скрипт: `js/catalog.js` на `menu.html` (`defer`). Рендерит в пустой `ul.catalog__list`.
+- Активная категория: `coffee` (фильтр по `product.category`). Tea / Dessert / show-more / modal — не этот шаг.
+- Фото: `assets/images/{category}-{n}.{ext}` по порядку внутри категории (`coffee` → `.jpg`, `tea` / `dessert` → `.png`, `n` с 1).
+- Карточка: тот же контракт — `li.catalog__item` → `article.card` с `img.card__photo`, `h2.card__title`, `p.card__text`, `p.card__price` (`$` + `price`).

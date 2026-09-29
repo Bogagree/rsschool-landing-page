@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/catalog-data
+feat/burger-menu
 ```
 
-Данные каталога. Спека: [part-2.md](./specs/part-2.md).
+Бургер-меню. Спека: [burger-menu.md](./specs/burger-menu.md).
 
 ---
 
@@ -24,7 +24,7 @@ feat/catalog-data
 ```text
 landing-page
 └── landing-page-part-2
-    ├── [    ] feat/catalog-data           # data/products.json + динамический рендер
+    ├── [done] feat/catalog-data           # data/products.json + динамический рендер
     ├── [    ] feat/burger-menu            # specs/burger-menu.md
     ├── [    ] feat/slider-logic           # specs/slider.md Part 2
     ├── [    ] feat/catalog-categories     # переключение категорий
@@ -38,6 +38,11 @@ landing-page
 
 ## Пока не делать
 
-- Начинать Part 2 до готовности Part 1
 - Готовые библиотеки слайдеров/модалок
 - Merge PR Part 2 в `landing-page`
+
+## Сдача
+
+PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.**
+
+В описании есть скриншот десктопной главной: шапка (Favorite coffee, About, Mobile app, Contact us, Menu, переключатель темы), герой и начало слайдера «Choose your favorite coffee». Это кадр Части 1, не отчёт о функциях Части 2. Чеклист Части 2 в PR не отмечен. GitHub Pages всё ещё собран с ветки `landing-page`.

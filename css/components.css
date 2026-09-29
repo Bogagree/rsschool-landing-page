@@ -33,8 +33,7 @@
   flex: 1 1 auto;
 }
 
-.header__list,
-.footer__list {
+.header__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md) var(--space-lg);
@@ -45,16 +44,14 @@
   justify-content: center;
 }
 
-.header__link,
-.footer__link {
+.header__link {
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 @media (hover: hover) {
-  .header__link:hover,
-  .footer__link:hover {
+  .header__link:hover {
     color: var(--color-link);
   }
 }
@@ -62,8 +59,7 @@
 .header__link:focus-visible,
 .header__logo:focus-visible,
 .header__theme:focus-visible,
-.header__burger:focus-visible,
-.footer__link:focus-visible {
+.header__burger:focus-visible {
   outline: 2px solid var(--color-link);
   outline-offset: 2px;
 }
@@ -79,12 +75,21 @@
 .header__menu {
   display: inline-flex;
   align-items: center;
-  padding: 0.55rem 1.35rem;
+  gap: 0.45rem;
+  padding: 0.55rem 1.15rem 0.55rem 1.35rem;
   border: 1px solid var(--color-text);
   border-radius: 999px;
   color: var(--color-text);
   text-decoration: none;
   transition: opacity 0.2s ease;
+}
+
+.header__menu-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: currentColor;
+  -webkit-mask: url("../assets/icons/coffee-cup.svg") center / contain no-repeat;
+  mask: url("../assets/icons/coffee-cup.svg") center / contain no-repeat;
 }
 
 @media (hover: hover) {
@@ -95,35 +100,43 @@
 
 .header__theme {
   display: inline-flex;
-  padding: 0;
-  border: 1px solid transparent;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.15rem;
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
   background: transparent;
   cursor: pointer;
-  transition: opacity 0.2s ease;
 }
 
-@media (hover: hover) {
-  .header__theme:hover {
-    opacity: 0.7;
-  }
+.header__theme-opt {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--color-text);
 }
 
-.header__theme-icon {
-  display: block;
-  width: 2.25rem;
-  height: 2.25rem;
+.header__theme-opt--light {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
 }
 
-.header__theme-icon--dark {
-  display: none;
+[data-theme='dark'] .header__theme-opt--light {
+  background-color: transparent;
+  color: var(--color-text);
 }
 
-[data-theme='dark'] .header__theme-icon--light {
-  display: none;
+[data-theme='dark'] .header__theme-opt--dark {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
 }
 
-[data-theme='dark'] .header__theme-icon--dark {
-  display: block;
+.header__theme-glyph {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
 }
 
 .header__burger {
@@ -237,12 +250,6 @@
   stroke: none;
 }
 
-.footer__list {
-  margin-top: var(--space-md);
-  font-size: var(--font-size-sm);
-}
-
-.footer__link,
 .footer__row {
   color: var(--color-on-footer);
   text-decoration: none;

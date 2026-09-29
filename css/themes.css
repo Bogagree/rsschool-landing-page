@@ -7,6 +7,8 @@
   --color-link: #403f3d;
   --color-footer: #665f55;
   --color-on-footer: #e1d4c9;
+  --color-accent: #b0907a;
+  --color-on-accent: #e1d4c9;
 }
 
 [data-theme='dark'] {
@@ -16,4 +18,6 @@
   --color-link: #e1d4c9;
   --color-footer: #1c1816;
   --color-on-footer: #e1d4c9;
+  --color-accent: #b0907a;
+  --color-on-accent: #e1d4c9;
 }
