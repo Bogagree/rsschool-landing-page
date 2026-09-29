@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/theme-localstorage
+feat/polish-validate-deploy
 ```
 
-Тема + `localStorage`. Спека: [theme.md](./specs/theme.md).
+W3C, hover, favicon, Pages, PR body.
 
 ---
 
@@ -35,7 +35,7 @@ main
     ├── [done] feat/home-extra-sections    # specs/home-sections.md
     ├── [done] feat/catalog-layout         # specs/catalog.md (статика)
     ├── [done] feat/responsive             # 1440 / 768 / 380
-    ├── [    ] feat/theme-localstorage     # specs/theme.md
+    ├── [done] feat/theme-localstorage     # specs/theme.md
     └── [    ] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
 ```
 

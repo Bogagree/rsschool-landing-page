@@ -188,6 +188,7 @@
   overflow: hidden;
   border-radius: var(--space-xl);
   background-color: var(--color-text);
+  /* Fixed white: readable on the dark latte photo in light and dark page themes */
   color: #fff;
 }
 
