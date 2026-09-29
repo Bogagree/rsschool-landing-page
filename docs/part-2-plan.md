@@ -40,3 +40,9 @@ landing-page
 
 - Готовые библиотеки слайдеров/модалок
 - Merge PR Part 2 в `landing-page`
+
+## Сдача
+
+PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.**
+
+В описании есть скриншот десктопной главной: шапка (Favorite coffee, About, Mobile app, Contact us, Menu, переключатель темы), герой и начало слайдера «Choose your favorite coffee». Это кадр Части 1, не отчёт о функциях Части 2. Чеклист Части 2 в PR не отмечен. GitHub Pages всё ещё собран с ветки `landing-page`.
