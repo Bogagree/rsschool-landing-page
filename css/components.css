@@ -1,4 +1,4 @@
-/* header, footer, hero, slider, about, extra. cards, modal — позже. */
+/* header, footer, hero, slider, about, extra, catalog cards. modal — позже. */
 .header {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -363,4 +363,119 @@
 }
 
 .catalog {
+  padding-block: var(--space-lg);
+}
+
+.catalog__title {
+  margin-bottom: var(--space-lg);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.catalog__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.catalog__tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.5rem;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.catalog__tab:hover {
+  opacity: 0.7;
+}
+
+.catalog__tab:focus-visible,
+.catalog__more:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.catalog__tab--active {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  opacity: 1;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  height: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-text);
+  border-radius: var(--space-lg);
+}
+
+.card__photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--space-md);
+}
+
+.card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: var(--font-size-sm);
+}
+
+.card__price {
+  font-weight: var(--font-weight-bold);
+}
+
+.catalog__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  margin: var(--space-lg) auto 0;
+  padding: var(--space-md) var(--space-xl);
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.catalog__more:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog__list {
+    grid-template-columns: 1fr;
+  }
 }
