@@ -6,8 +6,8 @@
   padding-inline: var(--container-padding-inline);
 }
 
+/* Above 1440px the column stays centered; section backgrounds may full-bleed. */
 .main {
-}
-
-.section {
+  width: 100%;
+  min-width: 0;
 }

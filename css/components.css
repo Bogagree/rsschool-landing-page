@@ -25,8 +25,10 @@
   width: auto;
 }
 
-.header__logo:hover {
-  opacity: 0.85;
+@media (hover: hover) {
+  .header__logo:hover {
+    opacity: 0.85;
+  }
 }
 
 .header__nav {
@@ -48,9 +50,11 @@
   transition: color 0.2s ease;
 }
 
-.header__link:hover,
-.footer__link:hover {
-  color: var(--color-link);
+@media (hover: hover) {
+  .header__link:hover,
+  .footer__link:hover {
+    color: var(--color-link);
+  }
 }
 
 .header__link:focus-visible,
@@ -79,8 +83,10 @@
   transition: opacity 0.2s ease;
 }
 
-.header__theme:hover {
-  opacity: 0.7;
+@media (hover: hover) {
+  .header__theme:hover {
+    opacity: 0.7;
+  }
 }
 
 .header__theme-icon {
@@ -116,8 +122,10 @@
   transition: opacity 0.2s ease;
 }
 
-.header__burger:hover {
-  opacity: 0.7;
+@media (hover: hover) {
+  .header__burger:hover {
+    opacity: 0.7;
+  }
 }
 
 .header__burger-bar {
@@ -144,6 +152,11 @@
   font-style: normal;
 }
 
+.footer__title {
+  margin: 0;
+  font-weight: var(--font-weight-bold);
+}
+
 @media (max-width: 768px) {
   .header__nav {
     display: none;
@@ -151,6 +164,11 @@
 
   .header__burger {
     display: inline-flex;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -220,8 +238,10 @@
   transition: opacity 0.2s ease;
 }
 
-.hero__cta:hover {
-  opacity: 0.85;
+@media (hover: hover) {
+  .hero__cta:hover {
+    opacity: 0.85;
+  }
 }
 
 .hero__cta:focus-visible {
@@ -229,11 +249,30 @@
   outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero__banner {
     justify-content: center;
     min-height: 40rem;
-    padding: 2.5rem;
+    padding: 6.25rem 6.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-block: var(--space-md);
+  }
+
+  .hero__banner {
+    min-height: 33.75rem;
+    padding: 6.25rem 2.5rem;
+    border-radius: var(--space-xl);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero__banner {
+    min-height: 33.75rem;
+    padding: 3.75rem 1rem;
   }
 }
 
@@ -289,8 +328,10 @@
   transition: opacity 0.2s ease;
 }
 
-.slider__control:hover {
-  opacity: 0.7;
+@media (hover: hover) {
+  .slider__control:hover {
+    opacity: 0.7;
+  }
 }
 
 .slider__control:focus-visible {
@@ -316,15 +357,26 @@
   transform: rotate(-45deg);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .slider__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Part 1 static: one slide visible; Part 2 JS will cycle. */
+  .slider__item:nth-child(n + 2) {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
   .slider__layout {
     grid-template-columns: auto auto;
     justify-content: space-between;
+    gap: var(--space-sm);
   }
 
   .slider__list {
     grid-column: 1 / -1;
-    grid-template-columns: 1fr;
     order: -1;
   }
 }
@@ -354,12 +406,26 @@
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: var(--space-lg);
 }
 
 .extra__photo {
   width: min(100%, 40rem);
   height: auto;
   margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  /* Coffee House: two About images drop at ≤768. */
+  .about__item:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .about__gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalog {
@@ -395,8 +461,10 @@
   transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
-.catalog__tab:hover {
-  opacity: 0.7;
+@media (hover: hover) {
+  .catalog__tab:hover {
+    opacity: 0.7;
+  }
 }
 
 .catalog__tab:focus-visible,
@@ -429,8 +497,10 @@
   transition: opacity 0.2s ease;
 }
 
-.card:hover {
-  opacity: 0.85;
+@media (hover: hover) {
+  .card:hover {
+    opacity: 0.85;
+  }
 }
 
 .card__photo {
@@ -456,7 +526,7 @@
 }
 
 .catalog__more {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   min-width: 8rem;
@@ -469,18 +539,23 @@
   transition: opacity 0.2s ease;
 }
 
-.catalog__more:hover {
-  opacity: 0.7;
+@media (hover: hover) {
+  .catalog__more:hover {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: 768px) {
   .catalog__list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
-@media (max-width: 480px) {
-  .catalog__list {
-    grid-template-columns: 1fr;
+  /* Coffee House: four products drop at ≤768; Show more UI only (Part 2 wires click). */
+  .catalog__item:nth-child(n + 5) {
+    display: none;
+  }
+
+  .catalog__more {
+    display: flex;
   }
 }

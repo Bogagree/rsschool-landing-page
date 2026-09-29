@@ -11,10 +11,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/responsive
+feat/theme-localstorage
 ```
 
-Адаптив 1440 / 768 / 380. Спека: [part-1.md](./specs/part-1.md).
+Тема + `localStorage`. Спека: [theme.md](./specs/theme.md).
 
 ---
 
@@ -34,7 +34,7 @@ main
     ├── [done] feat/home-slider-markup     # specs/slider.md (без JS)
     ├── [done] feat/home-extra-sections    # specs/home-sections.md
     ├── [done] feat/catalog-layout         # specs/catalog.md (статика)
-    ├── [    ] feat/responsive             # 1440 / 768 / 380
+    ├── [done] feat/responsive             # 1440 / 768 / 380
     ├── [    ] feat/theme-localstorage     # specs/theme.md
     └── [    ] feat/polish-validate-deploy # W3C, hover, favicon, Pages, PR body
 ```

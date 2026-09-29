@@ -24,3 +24,10 @@
 | Картинка | `img.hero__photo` → `assets/images/img-hero.jpg`, `object-fit: cover`, кадр смещён вправо. Текст поверх фото белый, чтобы читался на тёмном латте в обеих темах |
 
 `main` больше не несёт `.container`: колонка на hero — `.hero__inner.container`, пустые соседние секции обёрнуты отдельно, чтобы баннер мог занять ширину колонки 1440.
+
+## Адаптив (feat/responsive)
+
+- ≥769px: `min-height` баннера 40rem, padding `6.25rem`.
+- ≤768: `min-height` 33.75rem, padding `6.25rem 2.5rem`.
+- ≤380: padding `3.75rem 1rem`.
+- Без горизонтального скролла; текст и CTA поверх фото.
