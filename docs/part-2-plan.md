@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/burger-menu
+feat/slider-logic
 ```
 
-Бургер-меню. Спека: [burger-menu.md](./specs/burger-menu.md).
+Слайдер: логика и анимация. Спека: [slider.md](./specs/slider.md) (Part 2).
 
 ---
 
@@ -25,7 +25,7 @@ feat/burger-menu
 landing-page
 └── landing-page-part-2
     ├── [done] feat/catalog-data           # data/products.json + динамический рендер
-    ├── [    ] feat/burger-menu            # specs/burger-menu.md
+    ├── [done] feat/burger-menu            # specs/burger-menu.md
     ├── [    ] feat/slider-logic           # specs/slider.md Part 2
     ├── [    ] feat/catalog-categories     # переключение категорий
     ├── [    ] feat/catalog-show-more      # show-more / pagination + resize

@@ -34,7 +34,7 @@
               <a class="header__link" href="index.html#extra">Mobile app</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#contact">Contact us</a>
+              <a class="header__link" href="index.html#contact">Contact us</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +64,7 @@
             type="button"
             aria-label="Open menu"
             aria-expanded="false"
-            aria-disabled="true"
+            aria-controls="burger-panel"
           >
             <span class="header__burger-bar" aria-hidden="true"></span>
             <span class="header__burger-bar" aria-hidden="true"></span>
@@ -73,6 +73,28 @@
         </div>
       </div>
     </header>
+    <nav class="burger" id="burger-panel" aria-label="Mobile" hidden>
+      <ul class="burger__list">
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#favorite-coffee">Favorite coffee</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#about">About</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#extra">Mobile app</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#contact">Contact us</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link burger__link--menu" href="menu.html" aria-current="page">
+            Menu
+            <span class="burger__menu-icon" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <main class="main">
       <section class="catalog" id="catalog" aria-labelledby="catalog-title">
         <div class="catalog__inner container">
@@ -211,6 +233,7 @@
       </div>
     </footer>
     <script src="js/theme.js" defer></script>
+    <script src="js/burger.js" defer></script>
     <script src="js/catalog.js" defer></script>
   </body>
 </html>
