@@ -38,6 +38,5 @@ landing-page
 
 ## Пока не делать
 
-- Начинать Part 2 до готовности Part 1
 - Готовые библиотеки слайдеров/модалок
 - Merge PR Part 2 в `landing-page`
