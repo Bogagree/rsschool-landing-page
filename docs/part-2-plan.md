@@ -12,10 +12,8 @@
 ## Next (для нового чата)
 
 ```text
-feat/polish-deploy-part-2
+Part 2 feature steps are done. Do not merge landing-page-part-2 into landing-page — see docs/submit-checklist.md.
 ```
-
-Деплой, PR body, self-check Части 2. Спека: [part-2.md](./specs/part-2.md), [submit-checklist.md](./submit-checklist.md).
 
 ---
 
@@ -31,7 +29,7 @@ landing-page
     ├── [done] feat/catalog-show-more      # show-more / pagination + resize
     ├── [done] feat/modal                  # открытие/закрытие, overlay, Esc
     ├── [done] feat/modal-params           # ≥ 2 параметра, live update
-    └── [    ] feat/polish-deploy-part-2   # деплой, PR body, self-check
+    └── [done] feat/polish-deploy-part-2   # деплой, PR body, self-check
 ```
 
 ---
@@ -47,4 +45,4 @@ landing-page
 
 PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.**
 
-В описании есть скриншот десктопной главной: шапка (Favorite coffee, About, Mobile app, Contact us, Menu, переключатель темы), герой и начало слайдера «Choose your favorite coffee». Это кадр Части 1, не отчёт о функциях Части 2. Чеклист Части 2 в PR не отмечен. GitHub Pages всё ещё собран с ветки `landing-page`.
+GitHub Pages публикует ветку `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/ (проверено: `menu.html` подключает `js/modal.js` / `js/catalog.js`, каталог динамический). В описании PR #7 чеклист Части 2 отмечен, self-check по живому деплою. Скриншот в PR остаётся кадром Части 1 (главная); новый кадр каталога/модалки через GitHub UI не прикладывался.

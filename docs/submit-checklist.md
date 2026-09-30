@@ -19,15 +19,15 @@ PR Части 1: https://github.com/Bogagree/rsschool-landing-page/pull/1 — в
 
 PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.** Эту ссылку вставить в Cross-Check: Submit.
 
-В описании есть скриншот десктопной главной (шапка, герой, начало слайдера). Это кадр Части 1. Функции Части 2 в чеклисте PR не отмечены. Pages собран с `landing-page`.
+GitHub Pages публикует `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/. На живом URL доступны каталог из `data/products.json`, бургер, слайдер, категории, show-more, модалка и параметры. Чеклист Части 2 в описании PR #7 отмечен; self-check пройден по [part-2-cross-check.md](./part-2-cross-check.md). Скриншот в PR — кадр Части 1 (главная), не каталог/модалка.
 
 Перед сдачей пройти деплой по [part-2-cross-check.md](./part-2-cross-check.md) — те же 29 пунктов, что на Cross-Check: Review.
 
 1. Ветка `landing-page-part-2` от `landing-page`.
-2. Обновить деплой, когда в ветке появится функциональность Части 2.
+2. Деплой обновлён на Часть 2 (Pages ← `landing-page-part-2`).
 3. PR → `landing-page` (не мержить) → Submit.
 
 ## GitHub Pages (когда есть `index.html`)
 
-Settings → Pages → branch `landing-page`, folder `/`  
+Settings → Pages → branch `landing-page-part-2`, folder `/`  
 URL: `https://bogagree.github.io/rsschool-landing-page/`
