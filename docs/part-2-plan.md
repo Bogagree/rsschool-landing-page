@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/slider-logic
+feat/catalog-categories
 ```
 
-Слайдер: логика и анимация. Спека: [slider.md](./specs/slider.md) (Part 2).
+Категории каталога. Спека: [catalog.md](./specs/catalog.md).
 
 ---
 
@@ -26,7 +26,7 @@ landing-page
 └── landing-page-part-2
     ├── [done] feat/catalog-data           # data/products.json + динамический рендер
     ├── [done] feat/burger-menu            # specs/burger-menu.md
-    ├── [    ] feat/slider-logic           # specs/slider.md Part 2
+    ├── [done] feat/slider-logic           # specs/slider.md Part 2
     ├── [    ] feat/catalog-categories     # переключение категорий
     ├── [    ] feat/catalog-show-more      # show-more / pagination + resize
     ├── [    ] feat/modal                  # открытие/закрытие, overlay, Esc
