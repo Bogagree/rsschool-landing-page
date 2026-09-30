@@ -13,6 +13,7 @@
   var title = null;
   var text = null;
   var price = null;
+  var openFrameId = 0;
 
   if (!modal) {
     return;
@@ -47,11 +48,20 @@
       return;
     }
 
+    if (openFrameId) {
+      cancelAnimationFrame(openFrameId);
+      openFrameId = 0;
+    }
+
     fillContent(product, imageSrc);
     modal.removeAttribute('hidden');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add(BODY_OPEN);
-    requestAnimationFrame(function () {
+    openFrameId = requestAnimationFrame(function () {
+      openFrameId = 0;
+      if (!isOpen()) {
+        return;
+      }
       modal.classList.add(MODAL_OPEN);
       closeButton.focus();
     });
@@ -60,6 +70,11 @@
   function closeModal() {
     if (!isOpen()) {
       return;
+    }
+
+    if (openFrameId) {
+      cancelAnimationFrame(openFrameId);
+      openFrameId = 0;
     }
 
     modal.classList.remove(MODAL_OPEN);

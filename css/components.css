@@ -962,6 +962,10 @@ body.is-modal-open {
     visibility 0.25s;
 }
 
+.modal[hidden] {
+  display: none;
+}
+
 .modal.modal--open {
   visibility: visible;
   opacity: 1;
@@ -1069,7 +1073,6 @@ body.is-modal-open {
 @media (max-width: 768px) {
   .modal {
     padding: var(--space-md);
-    align-items: flex-end;
   }
 
   .modal__dialog {
