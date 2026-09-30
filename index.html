@@ -64,7 +64,7 @@
             type="button"
             aria-label="Open menu"
             aria-expanded="false"
-            aria-disabled="true"
+            aria-controls="burger-panel"
           >
             <span class="header__burger-bar" aria-hidden="true"></span>
             <span class="header__burger-bar" aria-hidden="true"></span>
@@ -73,6 +73,28 @@
         </div>
       </div>
     </header>
+    <nav class="burger" id="burger-panel" aria-label="Mobile" hidden>
+      <ul class="burger__list">
+        <li class="burger__item">
+          <a class="burger__link" href="#favorite-coffee">Favorite coffee</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="#about">About</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="#extra">Mobile app</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="#contact">Contact us</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link burger__link--menu" href="menu.html">
+            Menu
+            <span class="burger__menu-icon" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <main class="main">
       <section class="hero" id="hero">
         <div class="hero__inner container">
@@ -330,5 +352,6 @@
       </div>
     </footer>
     <script src="js/theme.js" defer></script>
+    <script src="js/burger.js" defer></script>
   </body>
 </html>
