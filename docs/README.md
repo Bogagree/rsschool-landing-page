@@ -12,6 +12,7 @@ Landing Page ведётся по **SDD** (как в [minigames](https://github.c
 | [implementation-plan.md](./implementation-plan.md) | Общий порядок работ |
 | [part-1-plan.md](./part-1-plan.md) | Чеклист шагов Части 1 |
 | [part-2-plan.md](./part-2-plan.md) | Чеклист шагов Части 2 |
+| [part-2-cross-check.md](./part-2-cross-check.md) | 29 пунктов ревью Части 2 и типичные провалы |
 | [qa/](./qa/) | Отчёты QA шага (`docs/qa/<feat-slug>.md`) |
 | [submit-checklist.md](./submit-checklist.md) | Сдача cross-check |
 | Agent factory (Cursor) | `.cursor/skills/landing-page-*/` + rule `agent-factory` |
