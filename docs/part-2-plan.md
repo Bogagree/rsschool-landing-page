@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/modal-params
+feat/polish-deploy-part-2
 ```
 
-Параметры карточки в модалке (≥ 2) + live update. Спека: [modal.md](./specs/modal.md).
+Деплой, PR body, self-check Части 2. Спека: [part-2.md](./specs/part-2.md), [submit-checklist.md](./submit-checklist.md).
 
 ---
 
@@ -30,7 +30,7 @@ landing-page
     ├── [done] feat/catalog-categories     # переключение категорий
     ├── [done] feat/catalog-show-more      # show-more / pagination + resize
     ├── [done] feat/modal                  # открытие/закрытие, overlay, Esc
-    ├── [    ] feat/modal-params           # ≥ 2 параметра, live update
+    ├── [done] feat/modal-params           # ≥ 2 параметра, live update
     └── [    ] feat/polish-deploy-part-2   # деплой, PR body, self-check
 ```
 
