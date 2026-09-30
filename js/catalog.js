@@ -1,7 +1,6 @@
 /**
- * Catalog cards, categories, show-more — feat/catalog-show-more
- * Modal — later feat.
- * @see docs/specs/catalog.md
+ * Catalog cards, categories, show-more, modal open event — feat/modal
+ * @see docs/specs/catalog.md, docs/specs/modal.md
  */
 (function () {
   var PRODUCTS_URL = 'data/products.json';
@@ -40,7 +39,7 @@
     return window.innerWidth <= MOBILE_MAX;
   }
 
-  function createCardItem(product, indexInCategory) {
+  function createCardItem(product, indexInCategory, productIndex) {
     var name = escapeHtml(product.name);
     var description = escapeHtml(product.description);
     var price = escapeHtml(product.price);
@@ -49,7 +48,9 @@
     var li = document.createElement('li');
     li.className = 'catalog__item';
     li.innerHTML =
-      '<article class="card">' +
+      '<article class="card" data-product-index="' +
+      productIndex +
+      '">' +
       '<img class="card__photo" src="' +
       src +
       '" alt="' +
@@ -116,16 +117,38 @@
     var fragment = document.createDocumentFragment();
     var indexInCategory = 0;
 
-    products.forEach(function (product) {
+    products.forEach(function (product, productIndex) {
       if (product.category !== activeCategory) {
         return;
       }
       indexInCategory += 1;
-      fragment.appendChild(createCardItem(product, indexInCategory));
+      fragment.appendChild(createCardItem(product, indexInCategory, productIndex));
     });
 
     list.replaceChildren(fragment);
     syncVisibility();
+  }
+
+  function onCardClick(event) {
+    var card = event.target.closest('.card');
+    if (!card || !list.contains(card)) {
+      return;
+    }
+
+    var index = Number(card.getAttribute('data-product-index'));
+    if (!Number.isFinite(index) || !products[index]) {
+      return;
+    }
+
+    var photo = card.querySelector('.card__photo');
+    document.dispatchEvent(
+      new CustomEvent('catalog:open-modal', {
+        detail: {
+          product: products[index],
+          imageSrc: photo ? photo.getAttribute('src') : '',
+        },
+      })
+    );
   }
 
   function syncTabs() {
@@ -201,6 +224,7 @@
     catalog = list.closest('.catalog');
     initTabs();
     initMore();
+    list.addEventListener('click', onCardClick);
 
     window.addEventListener('resize', syncVisibility);
 
