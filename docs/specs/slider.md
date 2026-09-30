@@ -19,6 +19,23 @@
 ## Out of scope
 
 - Готовые библиотеки (Swiper и т.п.)
+- Индикаторы (dots) — в макете/ассетах нет
+- Autoplay — в спеке Part 2 не требуется
+
+## Реализация (feat/slider-logic)
+
+Логика и анимация на главной (`index.html`, `section.slider#favorite-coffee`). Скрипт: `js/slider.js` (IIFE, `defer`), только на `index.html`. Vanilla JS, без Swiper и UI-библиотек.
+
+| Поведение | Контракт |
+| --- | --- |
+| Prev / next | Кнопки `.slider__control--prev` / `--next` листают в свою сторону. Циклически: после последнего — первый, до первого — последний. Без `disabled` и без `aria-disabled` (кнопки всегда доступны) |
+| Слайды | ≥ 3 `li.slider__item` с фото `coffee-slider-1/2/3.png`. Одновременно виден один слайд; соседние в разметке, обрезаны `overflow: hidden` на `.slider__stage` (без `display: none`). Горизонтального скролла страницы нет |
+| Анимация | `transform: translateX(…)` на `.slider__list`, CSS `transition`. При `prefers-reduced-motion: reduce` — transition отключён |
+| Подпись | У каждого слайда внутри `li`: название, описание и цена. 1 — S'mores Frappuccino, `$5.50`. 2 — Caramel Macchiato, `$5.00`. 3 — Ice coffee, `$4.50`. Тексты те же, что у трёх кадров слайдера Coffee House |
+| Индикаторы | Нет |
+| Autoplay | Нет |
+| Resize | Работает на 1440 / 768 / 380; после resize translate пересчитывается/сохраняется корректно |
+| Стили | Стрелки и сетка layout как в Part 1; правки CSS только под трек/overflow/анимацию. Hover controls — только opacity, без сдвига соседей |
 
 ## Реализация (feat/home-slider-markup)
 
