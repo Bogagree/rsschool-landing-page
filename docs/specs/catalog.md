@@ -49,3 +49,14 @@
 - Активная категория: `coffee` (фильтр по `product.category`). Tea / Dessert / show-more / modal — не этот шаг.
 - Фото: `assets/images/{category}-{n}.{ext}` по порядку внутри категории (`coffee` → `.jpg`, `tea` / `dessert` → `.png`, `n` с 1).
 - Карточка: тот же контракт — `li.catalog__item` → `article.card` с `img.card__photo`, `h2.card__title`, `p.card__text`, `p.card__price` (`$` + `price`).
+
+## Переключение категорий (feat/catalog-categories)
+
+Логика в `js/catalog.js` (тот же IIFE). Show-more / modal — не этот шаг.
+
+| Поведение | Контракт |
+| --- | --- |
+| Старт | При открытии / перезагрузке `menu.html` активна первая категория `coffee`: таб с `data-category="coffee"` имеет `catalog__tab--active` и `aria-pressed="true"`; в списке карточки только `category === "coffee"` |
+| Клик по табу | Таб с `data-category` (`coffee` / `tea` / `dessert`) становится единственным активным (`catalog__tab--active`, `aria-pressed="true"`); остальные — без модификатора, `aria-pressed="false"`. Без `aria-disabled` на табах. Список перерисовывается фильтром по выбранной категории без перезагрузки страницы |
+| Карточки | Тот же контракт рендера, что в `feat/catalog-data`; фото по порядку внутри выбранной категории. Одновременно видна одна категория |
+| Show-more | Кнопка остаётся `aria-disabled="true"`; клик и reset при смене категории — `feat/catalog-show-more` |
