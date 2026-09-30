@@ -77,22 +77,19 @@
 
 .header__menu {
   display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
+  align-items: flex-end;
+  gap: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid currentColor;
   color: var(--color-text);
+  line-height: 1;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
-.header__menu-label {
-  border-bottom: 2px solid currentColor;
-  line-height: 1.15;
-  padding-bottom: 0.12rem;
-}
-
 .header__menu-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   background-color: currentColor;
   -webkit-mask: url("../assets/icons/coffee-cup.svg") center / contain no-repeat;
   mask: url("../assets/icons/coffee-cup.svg") center / contain no-repeat;
@@ -107,8 +104,8 @@
 .header__theme {
   display: inline-flex;
   align-items: center;
-  gap: 0.1rem;
-  padding: 0.15rem;
+  gap: 8px;
+  padding: 4px;
   border: 1px solid var(--color-text);
   border-radius: 999px;
   background: transparent;
@@ -118,8 +115,8 @@
 .header__theme-opt {
   display: grid;
   place-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   color: var(--color-text);
 }
@@ -140,16 +137,16 @@
 }
 
 .header__theme-glyph {
-  width: 1.15rem;
-  height: 1.15rem;
+  width: 36px;
+  height: 36px;
   fill: currentColor;
 }
 
 .header__burger {
   position: relative;
   display: none;
-  width: calc(2.3rem + 2px);
-  height: calc(2.3rem + 2px);
+  width: 46px;
+  height: 46px;
   padding: 0;
   border: 1px solid var(--color-text);
   border-radius: 50%;
