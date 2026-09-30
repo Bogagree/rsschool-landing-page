@@ -34,7 +34,7 @@
 | --- | --- |
 | Название | `img.header__logo-img` → `assets/icons/logo.svg`, `alt="Resource Coffee House"`, ссылка на `index.html`. |
 | Nav | `nav` → `ul` → `li` → `a`. Якоря текущих секций каркаса главной и ссылка на каталог. Подписи = роли секций каркаса, не имена слоёв Figma. |
-| Тема | `button.header__theme`, `aria-label="Theme"`. Капсула с солнцем и луной сразу: в светлой теме круг `--color-accent` на солнце, в тёмной — на луне. Каждая позиция — блок 36×36; иконка луны внутри блока 18×18. Бордер капсулы 1px, цвет `--color-primary`. На десктопе капсула 88×44. Переключение и `localStorage` — `js/theme.js`. |
+| Тема | `button.header__theme`, `aria-label="Theme"`. Капсула с солнцем и луной сразу: в светлой теме круг `--color-accent` на солнце, в тёмной — на луне. Каждая позиция — блок 36×36; иконка луны внутри блока 18×18. Бордер капсулы 1px, цвет `--color-primary` (`#C1B6AD`). На десктопе капсула 88×44. Переключение и `localStorage` — `js/theme.js`. |
 | Бургер | `button.header__burger`, `aria-controls="burger-panel"`, `aria-expanded` по состоянию панели. Виден при `max-width: 768px`; `.header__nav` при этой ширине скрыта. Панель и JS — [burger-menu.md](./burger-menu.md) (`feat/burger-menu`). |
 
 | Подпись | href |

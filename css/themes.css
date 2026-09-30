@@ -9,7 +9,7 @@
   --color-on-footer: #e1d4c9;
   --color-accent: #b0907a;
   --color-on-accent: #e1d4c9;
-  --color-primary: #403f3d;
+  --color-primary: #c1b6ad;
 }
 
 [data-theme='dark'] {
@@ -21,5 +21,5 @@
   --color-on-footer: #e1d4c9;
   --color-accent: #b0907a;
   --color-on-accent: #e1d4c9;
-  --color-primary: #e1d4c9;
+  --color-primary: #c1b6ad;
 }
