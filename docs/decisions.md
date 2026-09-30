@@ -91,8 +91,8 @@ data/                   → products.json / products.js (Часть 2)
 - Date: 2026-09-22
 - Почему: бесплатный публичный URL для cross-check; альтернатива Netlify допустима без смены decision, если Pages недоступен
 
-Превью после появления `index.html`: ветка `landing-page`, folder `/`.  
-Ожидаемый URL: `https://bogagree.github.io/rsschool-landing-page/`
+Источник Pages: ветка `landing-page-part-2`, folder `/` (переключено с `landing-page`, чтобы cross-check открывал функциональность Части 2).  
+URL: `https://bogagree.github.io/rsschool-landing-page/`
 
 ---
 
