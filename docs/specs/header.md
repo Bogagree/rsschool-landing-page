@@ -43,6 +43,6 @@
 | About | `#about` |
 | Mobile app | `#extra` |
 | Contact us | `#contact` (с каталога `index.html#contact`) |
-| Menu | `a.header__menu` → `menu.html`, на десктопе справа: подпись и `assets/icons/coffee-cup.svg`. На ≤768 скрыта вместе с nav; видна кнопка бургера |
+| Menu | `a.header__menu` → `menu.html`. На десктопе справа от капсулы темы: подпись с подчёркиванием только под словом и `assets/icons/coffee-cup.svg`, без рамки-пилюли. На ≤768 скрыта вместе с nav; видна кнопка бургера |
 
 Когда `feat/home-*` переименует id секций под макет, в том же шаге обновить эту таблицу и href. SVG бургера подставить вместо CSS-полос, когда файл появится в `assets/icons/`.
