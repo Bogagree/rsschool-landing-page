@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/catalog-categories
+feat/catalog-show-more
 ```
 
-Категории каталога. Спека: [catalog.md](./specs/catalog.md).
+Show-more / pagination каталога. Спека: [catalog.md](./specs/catalog.md).
 
 ---
 
@@ -27,7 +27,7 @@ landing-page
     ├── [done] feat/catalog-data           # data/products.json + динамический рендер
     ├── [done] feat/burger-menu            # specs/burger-menu.md
     ├── [done] feat/slider-logic           # specs/slider.md Part 2
-    ├── [    ] feat/catalog-categories     # переключение категорий
+    ├── [done] feat/catalog-categories     # переключение категорий
     ├── [    ] feat/catalog-show-more      # show-more / pagination + resize
     ├── [    ] feat/modal                  # открытие/закрытие, overlay, Esc
     ├── [    ] feat/modal-params           # ≥ 2 параметра, live update

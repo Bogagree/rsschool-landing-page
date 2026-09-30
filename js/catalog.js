@@ -1,16 +1,21 @@
 /**
- * Catalog cards from data/products.json — feat/catalog-data
- * Active category: coffee only (tabs / show-more / modal — later feats).
+ * Catalog cards + category tabs — feat/catalog-categories
+ * Show-more / modal — later feats.
  * @see docs/specs/catalog.md
  */
 (function () {
   var PRODUCTS_URL = 'data/products.json';
-  var ACTIVE_CATEGORY = 'coffee';
+  var DEFAULT_CATEGORY = 'coffee';
   var IMAGE_EXT = {
     coffee: 'jpg',
     tea: 'png',
     dessert: 'png',
   };
+
+  var products = [];
+  var activeCategory = DEFAULT_CATEGORY;
+  var list = null;
+  var tabs = null;
 
   function escapeHtml(value) {
     return String(value)
@@ -54,12 +59,16 @@
     return li;
   }
 
-  function renderCards(products, list) {
+  function renderCards() {
+    if (!list) {
+      return;
+    }
+
     var fragment = document.createDocumentFragment();
     var indexInCategory = 0;
 
     products.forEach(function (product) {
-      if (product.category !== ACTIVE_CATEGORY) {
+      if (product.category !== activeCategory) {
         return;
       }
       indexInCategory += 1;
@@ -69,11 +78,59 @@
     list.replaceChildren(fragment);
   }
 
+  function syncTabs() {
+    if (!tabs) {
+      return;
+    }
+
+    tabs.forEach(function (tab) {
+      var isActive = tab.getAttribute('data-category') === activeCategory;
+      tab.classList.toggle('catalog__tab--active', isActive);
+      tab.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      tab.removeAttribute('aria-disabled');
+    });
+  }
+
+  function setCategory(category) {
+    if (!category || category === activeCategory) {
+      return;
+    }
+    if (!IMAGE_EXT[category]) {
+      return;
+    }
+
+    activeCategory = category;
+    syncTabs();
+    renderCards();
+  }
+
+  function onTabClick(event) {
+    var tab = event.currentTarget;
+    setCategory(tab.getAttribute('data-category'));
+  }
+
+  function initTabs() {
+    tabs = Array.prototype.slice.call(
+      document.querySelectorAll('.catalog__tab[data-category]')
+    );
+    if (!tabs.length) {
+      return;
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', onTabClick);
+    });
+
+    syncTabs();
+  }
+
   function init() {
-    var list = document.querySelector('.catalog__list');
+    list = document.querySelector('.catalog__list');
     if (!list) {
       return;
     }
+
+    initTabs();
 
     fetch(PRODUCTS_URL)
       .then(function (response) {
@@ -82,13 +139,17 @@
         }
         return response.json();
       })
-      .then(function (products) {
-        if (!Array.isArray(products)) {
+      .then(function (data) {
+        if (!Array.isArray(data)) {
           throw new Error('Products must be an array');
         }
-        renderCards(products, list);
+        products = data;
+        activeCategory = DEFAULT_CATEGORY;
+        syncTabs();
+        renderCards();
       })
       .catch(function () {
+        products = [];
         list.replaceChildren();
       });
   }
