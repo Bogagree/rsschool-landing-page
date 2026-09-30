@@ -21,6 +21,8 @@ PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part
 
 В описании есть скриншот десктопной главной (шапка, герой, начало слайдера). Это кадр Части 1. Функции Части 2 в чеклисте PR не отмечены. Pages собран с `landing-page`.
 
+Перед сдачей пройти деплой по [part-2-cross-check.md](./part-2-cross-check.md) — те же 29 пунктов, что на Cross-Check: Review.
+
 1. Ветка `landing-page-part-2` от `landing-page`.
 2. Обновить деплой, когда в ветке появится функциональность Части 2.
 3. PR → `landing-page` (не мержить) → Submit.
