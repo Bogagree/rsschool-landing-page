@@ -31,8 +31,8 @@
 | Элемент | Контракт |
 | --- | --- |
 | Секция | `section.catalog#catalog` в `main.main`, колонка `.catalog__inner.container` |
-| Заголовок | Один `h1.catalog__title`: `Menu` |
-| Категории | Три `button.catalog__tab` (Coffee / Tea / Dessert), `data-category`, `role="group"`. Активна Coffee (`catalog__tab--active`, `aria-pressed="true"`). Tea и Dessert — UI only, `aria-disabled="true"` (логика — Часть 2) |
+| Заголовок | Один `h1.catalog__title`: «Behind each of our cups hides an amazing surprise». Слово `amazing` — курсив `--color-accent`. Ориентир: `docs/qa/screenshots/[D] Menu _ Coffee.png` |
+| Категории | Три `button.catalog__tab` (Coffee / Tea / Dessert) с иконками `assets/icons/coffe_pic.png`, `tea_pic.png`, `dessert_pic.png`. Активна Coffee: заливка `--color-footer`, светлый текст. Tea и Dessert — контур, `aria-disabled="true"` (переключение — `feat/catalog-categories`) |
 | Карточки | 8 `article.card` в категории coffee: фото, `h2.card__title`, `p.card__text`, `p.card__price` (`$…`). На ≥769px — сетка 4 колонки, все 8 видны. При ≤768 — 2 колонки; `.catalog__item:nth-child(n + 5)` скрыты CSS (макет Coffee House) |
 | Show-more | `button.catalog__more` «Show more», `aria-disabled="true"`. Видна только при ≤768 (`display: flex`); на десктопе скрыта. Клик — Часть 2 |
 

@@ -39,10 +39,6 @@
           </ul>
         </nav>
         <div class="header__actions">
-          <a class="header__menu" href="menu.html" aria-current="page">
-            Menu
-            <span class="header__menu-icon" aria-hidden="true"></span>
-          </a>
           <button class="header__theme" type="button" aria-label="Theme">
             <span class="header__theme-opt header__theme-opt--light">
               <svg class="header__theme-glyph" viewBox="0 0 36 36" aria-hidden="true">
@@ -59,6 +55,10 @@
               </svg>
             </span>
           </button>
+          <a class="header__menu" href="menu.html" aria-current="page">
+            <span class="header__menu-label">Menu</span>
+            <span class="header__menu-icon" aria-hidden="true"></span>
+          </a>
           <button
             class="header__burger"
             type="button"
@@ -98,7 +98,10 @@
     <main class="main">
       <section class="catalog" id="catalog" aria-labelledby="catalog-title">
         <div class="catalog__inner container">
-          <h1 class="catalog__title" id="catalog-title">Menu</h1>
+          <h1 class="catalog__title" id="catalog-title">
+            Behind each of our cups hides an
+            <em class="catalog__accent">amazing</em> surprise
+          </h1>
           <div
             class="catalog__tabs"
             role="group"
@@ -110,6 +113,9 @@
               data-category="coffee"
               aria-pressed="true"
             >
+              <span class="catalog__tab-icon" aria-hidden="true">
+                <img src="assets/icons/coffe_pic.png" alt="" width="28" height="28" />
+              </span>
               Coffee
             </button>
             <button
@@ -119,6 +125,9 @@
               aria-pressed="false"
               aria-disabled="true"
             >
+              <span class="catalog__tab-icon" aria-hidden="true">
+                <img src="assets/icons/tea_pic.png" alt="" width="28" height="28" />
+              </span>
               Tea
             </button>
             <button
@@ -128,6 +137,9 @@
               aria-pressed="false"
               aria-disabled="true"
             >
+              <span class="catalog__tab-icon" aria-hidden="true">
+                <img src="assets/icons/dessert_pic.png" alt="" width="22" height="28" />
+              </span>
               Dessert
             </button>
           </div>
