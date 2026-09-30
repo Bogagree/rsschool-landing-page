@@ -562,6 +562,7 @@ body.is-burger-open {
 
 .slider__list {
   display: flex;
+  align-items: flex-start;
   width: 100%;
   list-style: none;
   transition: transform 0.45s ease;

@@ -31,7 +31,7 @@
 | Prev / next | Кнопки `.slider__control--prev` / `--next` листают в свою сторону. Циклически: после последнего — первый, до первого — последний. Без `disabled` и без `aria-disabled` (кнопки всегда доступны) |
 | Слайды | ≥ 3 `li.slider__item` с фото `coffee-slider-1/2/3.png`. Одновременно виден один слайд; соседние в разметке, обрезаны `overflow: hidden` на `.slider__stage` (без `display: none`). Горизонтального скролла страницы нет |
 | Анимация | `transform: translateX(…)` на `.slider__list`, CSS `transition`. При `prefers-reduced-motion: reduce` — transition отключён |
-| Подпись | S'mores Frappuccino / описание / `$5.50` только у слайда 1 (внутри первого `li`). Остальные слайды — фото и существующий `alt`, без выдуманных названий/цен |
+| Подпись | У каждого слайда внутри `li`: название, описание и цена. 1 — S'mores Frappuccino, `$5.50`. 2 — Caramel Macchiato, `$5.00`. 3 — Ice coffee, `$4.50`. Тексты те же, что у трёх кадров слайдера Coffee House |
 | Индикаторы | Нет |
 | Autoplay | Нет |
 | Resize | Работает на 1440 / 768 / 380; после resize translate пересчитывается/сохраняется корректно |

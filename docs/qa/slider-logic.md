@@ -21,7 +21,7 @@ Out of scope: catalog categories, show-more, modal.
 | --- | --- |
 | `header` / `nav` / `main` / `footer` | yes (1 / 2 / 1 / 1) |
 | One `h1` | yes — “Enjoy premium coffee…” |
-| Slider imgs `alt` | yes — S'mores Frappuccino…; Layered cortado…; Iced coffee… |
+| Slider imgs `alt` | yes — S'mores Frappuccino…; Caramel Macchiato…; Ice coffee… |
 | Controls | `button[type=button].slider__control--prev/next`, `aria-label` Previous/Next slide |
 | `aria-disabled` / `disabled` on controls | none |
 | Forbidden UI libs | none observed |
@@ -44,9 +44,11 @@ At each width: 3 × `li.slider__item`, `display: list-item` (not `none`), `.slid
 
 | Width | start → next → next → next (cycle) | prev from first → last | transition | caption slide 1 |
 | --- | --- | --- | --- | --- |
-| 1440 | 0 → 1 → 2 → 0 | 0 → 2 | `transform` 0.45s | S'mores + $5.50 yes; slides 2–3 no caption |
+| 1440 | 0 → 1 → 2 → 0 | 0 → 2 | `transform` 0.45s | each slide has name, description, price |
 | 768 | 0 → 1 → 2 → 0 | 0 → 2 | same | same |
 | 380 | 0 → 1 → 2 → 0 | 0 → 2 | same | same |
+
+Recheck after captions were added to slides 2 and 3: next from S'mores Frappuccino `$5.50` shows Caramel Macchiato `$5.00`, then Ice coffee `$4.50`. At 380 the visible slide stayed Ice coffee and `scrollWidth` stayed `365/365`.
 
 Transforms (examples): 1440 `translateX(0)` → `matrix(…, -1233, 0)`; 768 → `-561`; 380 → `-221`.
 
@@ -83,7 +85,7 @@ Loads (title “Coffee House — Menu”, has `main`). No H-scroll at 380. Slide
 - Checklist:
   - Semantics: PASS — landmarks, one h1, alts, labeled buttons, no aria-disabled
   - No horizontal scroll: PASS — 1440/768/380/1600 index; menu 380
-  - 1440: PASS — cyclic prev/next, one visible slide, transform transition, caption on slide 1 only
+  - 1440: PASS — cyclic prev/next, one visible slide, transform transition, name/description/price on each slide
   - 768: PASS — same; resize from 1440 keeps slide
   - 380: PASS — same
   - Theme contrast: PASS — light/dark slider text readable
