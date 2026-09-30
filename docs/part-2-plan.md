@@ -45,4 +45,4 @@ landing-page
 
 PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.**
 
-GitHub Pages публикует ветку `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/ (проверено: `menu.html` подключает `js/modal.js` / `js/catalog.js`, каталог динамический). В описании PR #7 чеклист Части 2 отмечен, self-check по живому деплою. Скриншот в PR остаётся кадром Части 1 (главная); новый кадр каталога/модалки через GitHub UI не прикладывался.
+GitHub Pages публикует ветку `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/ (проверено: `menu.html` подключает `js/modal.js` / `js/catalog.js`, каталог динамический). Self-check по живому деплою: **98 / 100** — отчёт [qa/polish-deploy-part-2.md](./qa/polish-deploy-part-2.md); снятие 2 балла за scroll-lock модалки (п. 6.3). В PR #7 чеклист Части 2: блок Modal не отмечен как полный. Скриншот в PR остаётся кадром Части 1 (главная); новый кадр каталога/модалки через GitHub UI не прикладывался.

@@ -19,7 +19,7 @@ PR Части 1: https://github.com/Bogagree/rsschool-landing-page/pull/1 — в
 
 PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.** Эту ссылку вставить в Cross-Check: Submit.
 
-GitHub Pages публикует `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/. На живом URL доступны каталог из `data/products.json`, бургер, слайдер, категории, show-more, модалка и параметры. Чеклист Части 2 в описании PR #7 отмечен; self-check пройден по [part-2-cross-check.md](./part-2-cross-check.md). Скриншот в PR — кадр Части 1 (главная), не каталог/модалка.
+GitHub Pages публикует `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/. На живом URL доступны каталог из `data/products.json`, бургер, слайдер, категории, show-more, модалка и параметры. Self-check по [part-2-cross-check.md](./part-2-cross-check.md) на деплое: **98 / 100** ([qa/polish-deploy-part-2.md](./qa/polish-deploy-part-2.md)); не полный балл за scroll-lock модалки. Скриншот в PR — кадр Части 1 (главная), не каталог/модалка.
 
 Перед сдачей пройти деплой по [part-2-cross-check.md](./part-2-cross-check.md) — те же 29 пунктов, что на Cross-Check: Review.
 
