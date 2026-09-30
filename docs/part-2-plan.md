@@ -12,10 +12,10 @@
 ## Next (для нового чата)
 
 ```text
-feat/catalog-show-more
+feat/modal
 ```
 
-Show-more / pagination каталога. Спека: [catalog.md](./specs/catalog.md).
+Модалка карточки. Спека: [modal.md](./specs/modal.md).
 
 ---
 
@@ -28,7 +28,7 @@ landing-page
     ├── [done] feat/burger-menu            # specs/burger-menu.md
     ├── [done] feat/slider-logic           # specs/slider.md Part 2
     ├── [done] feat/catalog-categories     # переключение категорий
-    ├── [    ] feat/catalog-show-more      # show-more / pagination + resize
+    ├── [done] feat/catalog-show-more      # show-more / pagination + resize
     ├── [    ] feat/modal                  # открытие/закрытие, overlay, Esc
     ├── [    ] feat/modal-params           # ≥ 2 параметра, live update
     └── [    ] feat/polish-deploy-part-2   # деплой, PR body, self-check

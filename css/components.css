@@ -915,12 +915,12 @@ body.is-burger-open {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* Coffee House: four products drop at ≤768; Show more UI only (Part 2 wires click). */
-  .catalog__item:nth-child(n + 5) {
+  /* Coffee House: four cards until Show more (catalog--expanded from catalog.js) */
+  .catalog:not(.catalog--expanded) .catalog__item:nth-child(n + 5) {
     display: none;
   }
 
-  .catalog__more {
+  .catalog__more--visible {
     display: flex;
   }
 }
