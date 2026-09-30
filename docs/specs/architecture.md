@@ -56,7 +56,7 @@ docs/               → SDD (не в runtime)
 
 `.container`: `width: 100%`, `max-width: var(--container-max-width)` (1440px — десктоп из критериев курса), `margin-inline: auto`. Фон секции не вешать на `.container`: выше 1440px колонка по центру, фон может быть на всю ширину. На главной `.container` стоит на `.hero__inner`, `.slider__inner`, `.about__inner` и `.extra__inner`, не на `<main>`.
 
-Цвета светлой темы сняты с кадра `docs/qa/screenshots/[D] Home.png`: фон `#E1D4C9`, текст `#403F3D`, плашка футера `#665F55`. Тёмная тема без кадра: тёмный фон и тот же светлый текст.
+Цвета светлой темы сняты с кадра `docs/qa/screenshots/[D] Home.png`: фон `#E1D4C9`, текст и `--color-primary` `#403F3D`, плашка футера `#665F55`. Тёмная тема без кадра: тёмный фон, текст и `--color-primary` `#E1D4C9`.
 
 ## Breakpoints (проверка курса)
 
