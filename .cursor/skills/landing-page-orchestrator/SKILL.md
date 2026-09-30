@@ -79,6 +79,7 @@ Green PR after user review requires a QA report **from this run** when the diff 
 1. For UI steps, ensure QA **overwrote** `docs/qa/<feat-slug>.md` (D-007) in **this** factory run and it is committed. An older PASS on the branch is not enough after UI or user-review changes.
 2. Push `feat/…` if needed.
 3. `gh pr create --base <part-branch>` with **Summary + Test plan** only. Link touched `docs/specs/…`, `docs/decisions.md`, and the QA report when one exists.  
+   **Language:** title and the prose under those headings are **Russian** (this repo). Keep the headings `## Summary` and `## Test plan`. Paths, `feat/…` names, and decision ids stay as written. Do not copy English bodies from older Part 1 PRs. Before writing, match the latest Russian `feat/*` PR (Part 2: #15–#17).  
    **Do not** put the course checklist (Task / Screenshot / Deployment / Done / Score) — that is only for `landing-page` → `main` (and later Part 2 → `landing-page`).  
    **Do not** add `Made with Cursor` (or similar) to the PR body.
 4. Return PR URL. **Do not merge.**
@@ -109,4 +110,5 @@ Green PR after user review requires a QA report **from this run** when the diff 
 - Introducing SCSS, Vite, TypeScript, React/Vue/Angular, Bootstrap, or Swiper without an `Accepted` decision (D-002 is vanilla)
 - Reusing `docs/qa/<slug>.md` PASS after live UI or user-review changed
 - Course checklist or `Made with Cursor` on a `feat/*` PR
+- English title or body on a `feat/*` PR (headings `## Summary` / `## Test plan` stay; the sentences are Russian)
 - Merging the PR, or merging `landing-page` → `main`
