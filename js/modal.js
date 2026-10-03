@@ -174,6 +174,10 @@
       openFrameId = 0;
     }
 
+    var alreadyOpen = isOpen();
+    if (!alreadyOpen && window.scrollLock) {
+      window.scrollLock.lock();
+    }
     fillContent(product, imageSrc);
     modal.removeAttribute('hidden');
     modal.setAttribute('aria-hidden', 'false');
@@ -184,7 +188,7 @@
         return;
       }
       modal.classList.add(MODAL_OPEN);
-      closeButton.focus();
+      closeButton.focus({ preventScroll: true });
     });
   }
 
@@ -201,6 +205,9 @@
     modal.classList.remove(MODAL_OPEN);
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove(BODY_OPEN);
+    if (window.scrollLock) {
+      window.scrollLock.unlock();
+    }
     modal.setAttribute('hidden', '');
     currentProduct = null;
   }
