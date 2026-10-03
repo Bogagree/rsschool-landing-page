@@ -16,7 +16,7 @@ Gate merge readiness for **one** `feat/*` → part branch (`landing-page` or `la
 ## Required reads
 
 1. Diff vs base part branch (`git diff landing-page...HEAD` or `landing-page-part-2...HEAD`)
-2. PR body expectations: `docs/conventions/git.md` (feat PRs are Summary + Test plan only)
+2. PR body expectations: `docs/conventions/git.md` (feat PRs are Summary + Test plan only; title and prose are Russian)
 3. Plan step + `docs/specs/…` + `docs/decisions.md` + `docs/conventions/*`
 4. Course links from the spec — AC only for this step
 
@@ -27,7 +27,7 @@ Gate merge readiness for **one** `feat/*` → part branch (`landing-page` or `la
 | 1   | Scope = one plan step; matches `## Next` (or the open feat under review); no unrelated work   | Yes                         |
 | 2   | SDD: behavior matches spec; decisions updated if needed; no invented variant/theme            | Yes                         |
 | 3   | Git: kebab `feat/…`, RS commits, base = part branch; PR not merged                            | Yes                         |
-| 4   | PR body: no course checklist; no `Made with Cursor`                                           | Yes                         |
+| 4   | PR body, when one exists: Russian title and prose; headings `## Summary` / `## Test plan` only; no course checklist; no `Made with Cursor`. English sentences are blocking. No PR yet → skip this row | Yes                         |
 | 5   | Stack: vanilla HTML/CSS/JS; no TS, React/Vue/Angular, Bootstrap, Swiper; no SCSS/Vite unless an Accepted decision exists | Yes                         |
 | 6   | Architecture: page-first, BEM, tokens not magic colors; no screenshot-as-layout               | Yes if violates conventions |
 | 7   | Step AC (non-visual)                                                                           | Yes                         |

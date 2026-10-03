@@ -91,8 +91,8 @@ data/                   → products.json / products.js (Часть 2)
 - Date: 2026-09-22
 - Почему: бесплатный публичный URL для cross-check; альтернатива Netlify допустима без смены decision, если Pages недоступен
 
-Превью после появления `index.html`: ветка `landing-page`, folder `/`.  
-Ожидаемый URL: `https://bogagree.github.io/rsschool-landing-page/`
+Источник Pages: ветка `landing-page-part-2`, folder `/` (переключено с `landing-page`, чтобы cross-check открывал функциональность Части 2).  
+URL: `https://bogagree.github.io/rsschool-landing-page/`
 
 ---
 
@@ -104,7 +104,7 @@ data/                   → products.json / products.js (Часть 2)
 
 Скиллы в git: `.cursor/skills/landing-page-orchestrator`, `landing-page-developer`, `landing-page-reviewer`, `landing-page-qa`. Правило: `.cursor/rules/agent-factory.mdc`.
 
-Пайплайн: Developer → Reviewer → QA → PR в part-ветку (`landing-page`, позже `landing-page-part-2`). Не мержить без пользователя. `feat/*` PR — Summary + Test plan, без чеклиста курса и без `Made with Cursor`.
+Пайплайн: Developer → Reviewer → QA → PR в part-ветку (`landing-page`, позже `landing-page-part-2`). Не мержить без пользователя. `feat/*` PR — Summary + Test plan, текст заголовка и пунктов по-русски (названия секций не переводить), без чеклиста курса и без `Made with Cursor`.
 
 QA-отчёт: `docs/qa/<feat-slug>.md` (`feat/header-footer` → `header-footer.md`): статус и заметки, без PNG в git. Проверки — чеклист шага (семантика, нет горизонтального скролла, 1440/768/380, контраст темы если тема есть, hover не сдвигает соседей). Это не pixel-perfect 375/768/1920. Пока P-001 не `Accepted` и макета нет, QA вёрстки — BLOCKED. Docs-only шаг: QA SKIPPED.
 

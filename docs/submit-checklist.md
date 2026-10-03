@@ -2,8 +2,7 @@
 
 В **Cross-Check: Submit** нужна ссылка на **Pull Request**, не на репозиторий.
 
-PR Части 1: https://github.com/Bogagree/rsschool-landing-page/pull/1  
-(пока без вёрстки — сдавать после `feat/polish-validate-deploy`)
+PR Части 1: https://github.com/Bogagree/rsschool-landing-page/pull/1 — влит в `main`.
 
 ---
 
@@ -11,18 +10,24 @@ PR Части 1: https://github.com/Bogagree/rsschool-landing-page/pull/1
 
 1. Работа в ветке `landing-page`.
 2. Деплой (Pages / Netlify) — главная открывается в инкогнито.
-3. PR: `landing-page` → `main` (**не мержить**).
+3. PR: `landing-page` → `main` — влит.
 4. Описание: Task, Screenshot, Deploy, Done/deadline, self-check, вариант (Coffee House / авторский).
 5. RS App → **Cross-Check: Submit** → URL PR.
 6. После старта cross-check — проверить чужие работы.
 
 ## Часть 2
 
+PR: https://github.com/Bogagree/rsschool-landing-page/pull/7 (`landing-page-part-2` → `landing-page`). **Не мержить.** Эту ссылку вставить в Cross-Check: Submit.
+
+GitHub Pages публикует `landing-page-part-2`, folder `/` → https://bogagree.github.io/rsschool-landing-page/. На живом URL доступны каталог из `data/products.json`, бургер, слайдер, категории, show-more, модалка и параметры. Self-check по [part-2-cross-check.md](./part-2-cross-check.md) на деплое: **98 / 100** ([qa/polish-deploy-part-2.md](./qa/polish-deploy-part-2.md)); не полный балл за scroll-lock модалки. Скриншот в PR — кадр Части 1 (главная), не каталог/модалка.
+
+Перед сдачей пройти деплой по [part-2-cross-check.md](./part-2-cross-check.md) — те же 29 пунктов, что на Cross-Check: Review.
+
 1. Ветка `landing-page-part-2` от `landing-page`.
-2. Обновить деплой.
+2. Деплой обновлён на Часть 2 (Pages ← `landing-page-part-2`).
 3. PR → `landing-page` (не мержить) → Submit.
 
 ## GitHub Pages (когда есть `index.html`)
 
-Settings → Pages → branch `landing-page`, folder `/`  
+Settings → Pages → branch `landing-page-part-2`, folder `/`  
 URL: `https://bogagree.github.io/rsschool-landing-page/`

@@ -34,34 +34,37 @@
               <a class="header__link" href="index.html#extra">Mobile app</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#contact">Contact us</a>
+              <a class="header__link" href="index.html#contact">Contact us</a>
             </li>
           </ul>
         </nav>
         <div class="header__actions">
-          <a class="header__menu" href="menu.html" aria-current="page">Menu</a>
           <button class="header__theme" type="button" aria-label="Theme">
-            <img
-              class="header__theme-icon header__theme-icon--light"
-              src="assets/icons/light.svg"
-              alt=""
-              width="36"
-              height="36"
-            />
-            <img
-              class="header__theme-icon header__theme-icon--dark"
-              src="assets/icons/dark.svg"
-              alt=""
-              width="36"
-              height="36"
-            />
+            <span class="header__theme-opt header__theme-opt--light">
+              <svg class="header__theme-glyph" viewBox="0 0 36 36" aria-hidden="true">
+                <path
+                  d="M17 10V8C17 7.45 17.45 7 18 7C18.55 7 19 7.45 19 8V10C19 10.55 18.55 11 18 11C17.45 11 17 10.55 17 10ZM24.36 13.05L25.77 11.63C26.16 11.24 26.16 10.61 25.77 10.22C25.38 9.83 24.75 9.83 24.36 10.22L22.95 11.64C22.56 12.03 22.56 12.66 22.95 13.05C23.34 13.44 23.97 13.44 24.36 13.05ZM28 17H26C25.45 17 25 17.45 25 18C25 18.55 25.45 19 26 19H28C28.55 19 29 18.55 29 18C29 17.45 28.55 17 28 17ZM18 25C17.45 25 17 25.45 17 26V28C17 28.55 17.45 29 18 29C18.55 29 19 28.55 19 28V26C19 25.45 18.55 25 18 25ZM11.64 13.05L10.22 11.64C9.83 11.25 9.83 10.61 10.22 10.23C10.61 9.85 11.25 9.84 11.63 10.23L13.04 11.64C13.43 12.03 13.43 12.67 13.04 13.05C12.65 13.43 12.02 13.44 11.64 13.05ZM22.95 22.95C22.56 23.34 22.56 23.98 22.95 24.36L24.36 25.77C24.75 26.16 25.39 26.16 25.77 25.77C26.16 25.38 26.16 24.74 25.77 24.36L24.36 22.95C23.98 22.56 23.34 22.56 22.95 22.95ZM8 19H10C10.55 19 11 18.55 11 18C11 17.45 10.55 17 10 17H8C7.45 17 7 17.45 7 18C7 18.55 7.45 19 8 19ZM11.64 25.78L13.05 24.37C13.44 23.98 13.44 23.34 13.05 22.96C12.66 22.58 12.02 22.57 11.64 22.96L10.23 24.37C9.84 24.76 9.84 25.4 10.23 25.78C10.61 26.17 11.25 26.17 11.64 25.78ZM18 12C14.69 12 12 14.69 12 18C12 21.31 14.69 24 18 24C21.31 24 24 21.31 24 18C24 14.69 21.31 12 18 12Z"
+                />
+              </svg>
+            </span>
+            <span class="header__theme-opt header__theme-opt--dark">
+              <svg class="header__theme-glyph" viewBox="0 0 36 36" aria-hidden="true">
+                <path
+                  d="M18 9C13.03 9 9 13.03 9 18C9 22.97 13.03 27 18 27C22.97 27 27 22.97 27 18C27 17.54 26.96 17.08 26.9 16.64C25.92 18.01 24.32 18.9 22.5 18.9C19.52 18.9 17.1 16.48 17.1 13.5C17.1 11.69 17.99 10.08 19.36 9.1C18.92 9.04 18.46 9 18 9Z"
+                />
+              </svg>
+            </span>
           </button>
+          <a class="header__menu" href="menu.html" aria-current="page">
+            <span class="header__menu-label">Menu</span>
+            <span class="header__menu-icon" aria-hidden="true"></span>
+          </a>
           <button
             class="header__burger"
             type="button"
             aria-label="Open menu"
             aria-expanded="false"
-            aria-disabled="true"
+            aria-controls="burger-panel"
           >
             <span class="header__burger-bar" aria-hidden="true"></span>
             <span class="header__burger-bar" aria-hidden="true"></span>
@@ -70,10 +73,35 @@
         </div>
       </div>
     </header>
+    <nav class="burger" id="burger-panel" aria-label="Mobile" hidden>
+      <ul class="burger__list">
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#favorite-coffee">Favorite coffee</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#about">About</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#extra">Mobile app</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="index.html#contact">Contact us</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link burger__link--menu" href="menu.html" aria-current="page">
+            Menu
+            <span class="burger__menu-icon" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <main class="main">
       <section class="catalog" id="catalog" aria-labelledby="catalog-title">
         <div class="catalog__inner container">
-          <h1 class="catalog__title" id="catalog-title">Menu</h1>
+          <h1 class="catalog__title" id="catalog-title">
+            Behind each of our cups hides an
+            <em class="catalog__accent">amazing</em> surprise
+          </h1>
           <div
             class="catalog__tabs"
             role="group"
@@ -85,6 +113,9 @@
               data-category="coffee"
               aria-pressed="true"
             >
+              <span class="catalog__tab-icon" aria-hidden="true">
+                <img src="assets/icons/coffe_pic.png" alt="" width="28" height="28" />
+              </span>
               Coffee
             </button>
             <button
@@ -92,8 +123,10 @@
               type="button"
               data-category="tea"
               aria-pressed="false"
-              aria-disabled="true"
             >
+              <span class="catalog__tab-icon" aria-hidden="true">
+                <img src="assets/icons/tea_pic.png" alt="" width="28" height="28" />
+              </span>
               Tea
             </button>
             <button
@@ -101,148 +134,38 @@
               type="button"
               data-category="dessert"
               aria-pressed="false"
-              aria-disabled="true"
             >
+              <span class="catalog__tab-icon" aria-hidden="true">
+                <img src="assets/icons/dessert_pic.png" alt="" width="22" height="28" />
+              </span>
               Dessert
             </button>
           </div>
-          <ul class="catalog__list">
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-1.jpg"
-                    alt="Irish coffee"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Irish coffee</h2>
-                  <p class="card__text">
-                    Fragrant black coffee with Jameson Irish whiskey and whipped
-                    milk
-                  </p>
-                  <p class="card__price">$7.00</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-2.jpg"
-                    alt="Kahlua coffee"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Kahlua coffee</h2>
-                  <p class="card__text">
-                    Classic coffee with milk and Kahlua liqueur under a cap of
-                    frothed milk
-                  </p>
-                  <p class="card__price">$7.00</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-3.jpg"
-                    alt="Honey raf"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Honey raf</h2>
-                  <p class="card__text">
-                    Espresso with frothed milk, cream and aromatic honey
-                  </p>
-                  <p class="card__price">$5.50</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-4.jpg"
-                    alt="Ice cappuccino"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Ice cappuccino</h2>
-                  <p class="card__text">
-                    Cappuccino with soft thick foam in summer version with ice
-                  </p>
-                  <p class="card__price">$5.00</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-5.jpg"
-                    alt="Espresso"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Espresso</h2>
-                  <p class="card__text">Classic black coffee</p>
-                  <p class="card__price">$4.50</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-6.jpg"
-                    alt="Latte"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Latte</h2>
-                  <p class="card__text">
-                    Espresso coffee with the addition of steamed milk and dense
-                    milk foam
-                  </p>
-                  <p class="card__price">$5.50</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-7.jpg"
-                    alt="Latte macchiato"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Latte macchiato</h2>
-                  <p class="card__text">
-                    Espresso with frothed milk and chocolate
-                  </p>
-                  <p class="card__price">$5.50</p>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="card">
-                  <img
-                    class="card__photo"
-                    src="assets/images/coffee-8.jpg"
-                    alt="Coffee with cognac"
-                    width="340"
-                    height="340"
-                  />
-                  <h2 class="card__title">Coffee with cognac</h2>
-                  <p class="card__text">
-                    Fragrant black coffee with cognac and whipped cream
-                  </p>
-                  <p class="card__price">$6.50</p>
-                </article>
-              </li>
-          </ul>
+          <ul class="catalog__list"></ul>
           <button
             class="catalog__more"
             type="button"
             aria-label="Show more"
-            aria-disabled="true"
+            aria-hidden="true"
+            tabindex="-1"
           >
+            <svg class="catalog__more-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20 12a8 8 0 1 1-2.3-5.7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 4.5V9h-4.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
             Show more
           </button>
         </div>
@@ -302,26 +225,6 @@
               </a>
             </li>
           </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a
-                class="footer__link"
-                href="https://github.com/Bogagree"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
-            </li>
-            <li class="footer__item">
-              <a
-                class="footer__link"
-                href="https://rs.school/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >RS School</a
-              >
-            </li>
-          </ul>
         </div>
         <div class="footer__contact">
           <p class="footer__title">Contact us</p>
@@ -357,6 +260,54 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal"
+      id="product-modal"
+      hidden
+      aria-hidden="true"
+    >
+      <div
+        class="modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal__body">
+          <img class="modal__photo" alt="" width="310" height="310" />
+          <div class="modal__info">
+            <h2 class="modal__title" id="modal-title"></h2>
+            <p class="modal__text"></p>
+            <div class="modal__params">
+              <div class="modal__param" data-param="size">
+                <p class="modal__param-label">Size</p>
+                <div class="modal__options modal__options--size"></div>
+              </div>
+              <div class="modal__param" data-param="additives">
+                <p class="modal__param-label">Additives</p>
+                <div class="modal__options modal__options--additives"></div>
+              </div>
+            </div>
+            <p class="modal__total">
+              <span class="modal__total-label">Total:</span>
+              <span class="modal__price"></span>
+            </p>
+            <p class="modal__note">
+              <svg class="modal__note-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 11v5" />
+                <circle cx="12" cy="8" r="0.8" />
+              </svg>
+              <span>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</span>
+            </p>
+            <button class="modal__close" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/theme.js" defer></script>
+    <script src="js/scroll-lock.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/catalog.js" defer></script>
+    <script src="js/modal.js" defer></script>
   </body>
 </html>
