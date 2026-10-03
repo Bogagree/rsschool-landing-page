@@ -18,7 +18,7 @@ Figma MCP по-прежнему без edit access, тексты слоёв не
 | Элемент | Контракт |
 | --- | --- |
 | About | `section.about#about`. Цитата из `[D] Home`. Десктоп — две колонки: слева tall woman и short lights, справа short man и tall couple (зазор ~40px, не равные квадраты). ≤768 — woman и couple столбиком. ≤380 — только couple |
-| Extra | `section.extra#extra`. Заголовок «Download our app to start ordering», текст, ссылки App Store и Google Play, `mobile-screens.png` справа. ≤768 — столбик: текст, кнопки, телефоны |
+| Extra | `section.extra#extra`. Заголовок «Download our app to start ordering», текст, ссылки App Store и Google Play, `mobile-screens.png` справа. ≤768 — столбик: текст, кнопки, телефоны. Кнопки — прозрачные пилюли с обводкой `#665F55`: иконка и две строки. App Store — «Available on the» / «App Store». Google Play — «Available on» / «Google Play». Иконки монохром, `currentColor` |
 
 Колонки — `.about__inner.container` и `.extra__inner.container`.
 

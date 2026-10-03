@@ -31,6 +31,9 @@
     panel.removeAttribute('hidden');
     panel.setAttribute('aria-hidden', 'false');
     document.body.classList.add(BODY_OPEN);
+    if (window.scrollLock) {
+      window.scrollLock.lock();
+    }
     requestAnimationFrame(function () {
       panel.classList.add(PANEL_OPEN);
     });
@@ -45,6 +48,9 @@
     panel.classList.remove(PANEL_OPEN);
     panel.setAttribute('aria-hidden', 'true');
     document.body.classList.remove(BODY_OPEN);
+    if (window.scrollLock) {
+      window.scrollLock.unlock();
+    }
   }
 
   function onPanelTransitionEnd(event) {
